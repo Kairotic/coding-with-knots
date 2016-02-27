@@ -273,13 +273,13 @@ twelve groups of eight grey pendants seem redundant – were these meant
 to be filled in later? Did they represent something important without
 containing any knots? We will probably never know.
 
-[](figures/UR1176.png)
+![](figures/UR1176.png)
 
 The original thinking of the pixelquipu was to attempt to fit all the
 quipus on a single page for viewing, as it represents them with the
 absolute minimum pixels required. Here are both pendant colour and
 entropy shown for all 247 quipu we have the data for:
 
-[](figures/all.png)
+![](figures/all.png)
 
-[](https://raw.githubusercontent.com/Kairotic/coding-with-knots/blob/master/figures/entropy-local.png)
+![](https://raw.githubusercontent.com/Kairotic/coding-with-knots/blob/master/figures/entropy-local.png)
