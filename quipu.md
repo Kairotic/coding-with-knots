@@ -282,4 +282,4 @@ entropy shown for all 247 quipu we have the data for:
 
 [](figures/all.png)
 
-[](figures/entropy-local.png)
+[](https://github.com/Kairotic/coding-with-knots/blob/master/figures/entropy-local.png)
