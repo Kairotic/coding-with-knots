@@ -17,11 +17,11 @@ for Music and Media in Düsseldorf. My teaching role there gives us an
 opportunity to look at one of the intriguing technology histories
 related to the weavingcodes project, the Inca quipu.
 
-[](Yupana.jpg)
+![](figures/Yupana.jpg)
 A Spanish illustration of a Khipukamayuq (knot maker/keeper)
 
  
-[](quipu-wari)
+![](figures/quipu-wari)
 A close up of a small quipu showing undecyphered changes in colour, material and twist.
 
 
@@ -187,7 +187,7 @@ carrying potential of data which we have no idea about. Here are all the
 quipu in the Harvard database in order of average entropy bits they
 contain (only listing every other quipu ID):
 
-[](figures/entropy-per-quipu.png)
+![](figures/entropy-per-quipu.png)
 
 This graph is calculated by making lists of all the discreet data of the
 same type, e.g. knot value, type, tying direction, pendant colours and
@@ -202,17 +202,17 @@ single or figure of eight), which represent a decimal notation. If we
 compare the entropy of these we can expect them to have roughly similar
 average amounts of information:
 
-[](figures/entropy-values-types.png)
+![](figures/entropy-values-types.png)
 
 The meanings of colours, ply and structure are largely unknown. Here are
 the knot values compared with the colours:
 
-[](figures/entropy-values-colours.png)
+![](figures/entropy-values-colours.png)
 
 And this is pendant ply direction compared with knot values for each
 quipu:
 
-[](figures/entropy-values-ply.png)
+![](figures/entropy-values-ply.png)
 
 At this point the most useful aspect of this work is to give us some
 outliers to inspect visually and sonically – more on that soon.
@@ -227,7 +227,7 @@ right positions with the pendants being the right length.
 
 Meet the pixelquipu!
 
-[](figures/ur018.png)
+![](figures/ur018.png)
 
 These are drawn using a python script which reads the Harvard Quipu
 Database and renders quipu structure using the correct colours. The
@@ -238,7 +238,7 @@ the brightness of the pixel. The colour variations for the pendants are
 working, but no difference between twisted and alternating colours, also
 no twist direction is visualised yet.
 
-[](figures/hp017.png)
+![](figures/hp017.png)
 
 Another advantage of this form of rendering is that we can draw data
 entropy within the quipu in order to provide a different view of how the
@@ -247,9 +247,9 @@ done hierarchically so a pendant’s entropy is that of its data plus all
 the sub-pendants, which seemed most appropriate given the non-linear
 form that the data takes.
 
-[](figures/ur037.png)
+![](figures/ur037.png)
 
-[](figures/e-ur037.png)
+![](figures/e-ur037.png)
 
 We can now look at some quipus in more detail – what was the purpose of
 the red and grey striped pendants in the quipu below? They contain no
@@ -257,14 +257,14 @@ knots, are they markers of some kind? This also seems to be a quipu
 where the knots do not follow the decimal coding pattern that we
 understand, they are mostly long knots of various values.
 
-[](figures/ur051.png)
+![](figures/ur051.png)
 
 There also seems to be data stored in different kinds of structure in
 the same quipu – the collection of sub-pendants below in the left side
 presumably group data in a more hierarchical manner than the right side,
 which seems much more linear – and also a colour change emphasises this.
 
-[](figures/ur015.png)
+![](figures/ur015.png)
 
 Read left to right, this long quipu below seems very much like you’d
 expect binary data to look – some kind of header information or
@@ -282,4 +282,4 @@ entropy shown for all 247 quipu we have the data for:
 
 ![](figures/all.png)
 
-![](https://raw.githubusercontent.com/Kairotic/coding-with-knots/blob/master/figures/entropy-local.png)
+![](figures/entropy-local.png)
