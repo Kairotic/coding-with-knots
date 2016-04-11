@@ -208,7 +208,14 @@ a second an shorter as we go down the subsidiaries) has a number of
 independent timbral properties. Here is an overview of what “quipu
 dimension” is mapped onto which sound dimension:
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 | colour 	| sine tone spectrum of three partials |
+| --- | --- |
 | branching level |	duration between sound grains (inter onset duration) |
 | pendant length |	duration of each sound grain (relative to inter onset time) |
 | pendant attach (verso or recto) |	pan position left or right channel |
