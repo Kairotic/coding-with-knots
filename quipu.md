@@ -129,8 +129,10 @@ average amounts of information:
 
 ![](figures/entropy-values-types.png)
 
-The meanings of colours, ply and structure are largely unknown. Here are
-the knot values compared with the colours:
+The meanings of colours, ply and structure are largely unknown, but we
+can compare them with the knot values which we do understand. This
+could give an indication if they contain information. Here are the knot
+values compared with the colours:
 
 ![](figures/entropy-values-colours.png)
 
@@ -141,15 +143,14 @@ quipu:
 
 From this work we could see that the relationship to various data types
 is fairly uniform, and is not clustered in any way which would indicate
-different modes or categories of quipu. We also can see some outliers to
-inspect further.
+different modes or categories of quipu. We can also use this technique
+to located outliers to inspect further.
 
 As well as looking at a quipu as a descreet unit, we can also look
-inside them and view their structures in terms of relative entropy, as a
-attempt to uncover hidden complexity. This is done below hierarchically
-so a pendant’s entropy is that of its data plus all the sub-pendants,
-which seemed most appropriate given the non-linear form that the data
-takes.
+inside them and view their structure in terms of relative entropy. This
+is done below hierarchically, so a pendant’s entropy (shown as
+brightness) is that of its data plus all the sub-pendants, which seemed
+most appropriate given the non-linear form that the data takes.
 
 ![](figures/ur037.png)
 
@@ -159,9 +160,7 @@ This figure shows the local entropy for all the Quipu.
 
 ![](figures/entropy-local.png)
 
-
 # Sonification
-
 
 To start with Dave briefly introduced the Inca civilisation, some of
 their scientific achievements and very different understanding of time
