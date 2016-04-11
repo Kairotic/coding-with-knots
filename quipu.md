@@ -34,8 +34,8 @@ constructed[] which then converted the data into a form readable by
 Graphviz[]. This provided us with schematic representation of the
 structure, knots and colours.
 
-![UR1138 rendered using Graphviz](figures/UR1138.xls.png)
-
+![](figures/UR1138.xls.png)
+UR1138 rendered using Graphviz
 
 The quipu cord colours are encoded in the database using Ascher colour
 codes
@@ -52,7 +52,8 @@ The Graphviz visualisations have quite a few limitations, as they tend
 to make very large images, and there is limited control over how they
 are drawn. We needed to get more of an overview of the data, displaying
 the knots in the right positions with the pendants being the right
-length. A new system was written to display a Quipu directly from the Harvard dataset:
+length. A new 'pixelquipu' system[] was written to display a Quipu
+directly from the Harvard dataset:
 
 ![](figures/ur018.png)
 
@@ -65,17 +66,6 @@ pendants are reresented, but there is no difference between twisted and
 alternating colours, also no twist direction is visualised.
 
 ![](figures/hp017.png)
-
-Another advantage of this form of rendering is that we can draw data
-entropy within the quipu in order to provide a different view of how the
-data is structured, as a attempt to uncover hidden complexity. This is
-done hierarchically so a pendant’s entropy is that of its data plus all
-the sub-pendants, which seemed most appropriate given the non-linear
-form that the data takes.
-
-![](figures/ur037.png)
-
-![](figures/e-ur037.png)
 
 We can now look at some quipus in more detail – what was the purpose of
 the red and grey striped pendants in the quipu below? They contain no
@@ -97,7 +87,7 @@ expect binary data to look – some kind of header information or
 preamble, followed by a repeating structure with local variation. The
 twelve groups of eight grey pendants seem redundant – were these meant
 to be filled in later? Did they represent something important without
-containing any knots? We will probably never know.
+containing any knots?
 
 ![](figures/UR1176.png)
 
@@ -114,49 +104,13 @@ As we have so little idea what the Inca are telling us in their Quipu,
 it seems appropriate to add a cryptanalysis approach to our toolkit of
 inquiry. One of the first things that a cryptanalyst will do when
 inspecting an unknown system is to visualise it’s entropy in order to
-get a handle on any structures or patterns in the underlying
-information. This concept comes from Claude Shannon’s work on
-information theory in the 40’s, where he proved that information obeys
-fundamental laws of physics. The concept that information and
-“cyberspace” may not be as intangible and otherworldly as we might
-believe (in fact is grounded in physical reality along with everything
-else) is one of the recurring themes of the weavingcodes project.
+get a handle on structures or patterns in the underlying
+information. Entropy[shannon] is a calculation of the minimum knowledge
+contained by some amount of data, and is a proof that information is
+bound by the rules of physics.
 
-Shannon’s innovation was to separate the concepts of data quantity from
-information value, and he claims that information is equivalent to
-surprise – the more surprising a piece of data is, the more information
-it contains. Conversely a piece of information which we expect to hear
-by definition doesn’t really tell us very much. The potential for some
-data to be surprising (or more specifically it’s potential to reduce our
-uncertainty) can be measured statistically, with a quantity he called
-entropy, as it is analogous to states in thermodynamic systems.
-
-
-Shannon defined a generalised communication system, which is handy to
-give us a way of reasoning about our situation in relation to the
-Inca. Our main unknown is the source of the messages they are sending
-us, are they accounting information, calendars or stories? We know a bit
-more about the transmitters of the messages, the khipukamayuq – the knot
-makers and quipu keepers. At the time Shannon was working on information
-theory, he was part of the start of the movement away from analogue,
-continuous signals and towards digital signals – with advantages that
-they are highly resistant to noise and can be carried further and
-combined together to increase bandwidth. Quipu are also mainly comprised
-of digital information – the type of a knot, the number of turns it’s
-comprised of or the twist direction of a thread are all discreet (either
-one thing or another) and therefore highly robust to material decay or
-decomposition. We can still ‘read’ them confidently after 500 years or
-more without the digital signal they represent being degraded too badly,
-if only we could understand it. At the same time, none of us working on
-this have access to a real quipu, so our receivers are the
-archaeologists and historians who study them, and compile archives such
-as the Harvard Quipu Archive we are using.
-
-Although entropy is a very simplistic approach mathematically, it’s main
-use is to give us a tool for measuring the comparative information
-carrying potential of data which we have no idea about. Here are all the
-quipu in the Harvard database in order of average entropy bits they
-contain (only listing every other quipu ID):
+Here are all the quipu in the Harvard database in order of average
+entropy bits they contain (only listing every other quipu ID):
 
 ![](figures/entropy-per-quipu.png)
 
@@ -185,8 +139,23 @@ quipu:
 
 ![](figures/entropy-values-ply.png)
 
-At this point the most useful aspect of this work is to give us some
-outliers to inspect visually and sonically – more on that soon.
+From this work we could see that the relationship to various data types
+is fairly uniform, and is not clustered in any way which would indicate
+different modes or categories of quipu. We also can see some outliers to
+inspect further.
+
+As well as looking at a quipu as a descreet unit, we can also look
+inside them and view their structures in terms of relative entropy, as a
+attempt to uncover hidden complexity. This is done below hierarchically
+so a pendant’s entropy is that of its data plus all the sub-pendants,
+which seemed most appropriate given the non-linear form that the data
+takes.
+
+![](figures/ur037.png)
+
+![](figures/e-ur037.png)
+
+This figure shows the local entropy for all the Quipu.
 
 ![](figures/entropy-local.png)
 
