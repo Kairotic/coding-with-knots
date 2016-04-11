@@ -208,13 +208,12 @@ a second an shorter as we go down the subsidiaries) has a number of
 independent timbral properties. Here is an overview of what “quipu
 dimension” is mapped onto which sound dimension:
 
-colour 	sine tone spectrum of three partials
-branching level 	duration between sound grains (inter onset duration)
-colour 	sine tone spectrum composed of three partials
-pendant length 	duration of each sound grain (relative to inter onset time)
-pendant attach (verso or recto) 	pan position left or right channel
-pendant ply (S or Z) 	envelope shape (audible as “inversion effect”)
-unknown values 	are usually interpreted as neutral (pan) or low (colour)
+| colour 	| sine tone spectrum of three partials |
+| branching level |	duration between sound grains (inter onset duration) |
+| pendant length |	duration of each sound grain (relative to inter onset time) |
+| pendant attach (verso or recto) |	pan position left or right channel |
+| pendant ply (S or Z) |	envelope shape (audible as “inversion effect”) |
+| unknown values |	are usually interpreted as neutral (pan) or low (colour) |
 
 The moments of audible acceleration result from areas with many pendants
 that have subsidiaries (side branches). In various dimensions rhythmic
