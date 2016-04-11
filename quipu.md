@@ -34,10 +34,17 @@ constructed[] which then converted the data into a form readable by
 Graphviz[]. This provided us with schematic representation of the
 structure, knots and colours.
 
-![](figures/UR1138.xls.png)
-UR1138 rendered using Graphviz
+![UR1138 rendered using Graphviz](figures/UR1138.xls.png)
 
-The quipu cord colours are encoded in the database using Ascher colour codes [Ascher, Marcia; Robert Ascher (1978). Code of the Quipu: Databook. Ann Arbor: University of Michigan Press. ASIN B0006X3SV4.] which is an adapated form of ISCC-NBS colour coding, a standard from the 1939 [D. B. Judd and Kenneth L. Kelly (1939). “Method of designating colors and a dictionary”. Journal of Research of the National Bureau of Standards 23, p 355. RP1239.] this was converted to hex RGB values required for the visualisation using this website[http://tx4.us/nbs-iscc.htm].
+
+The quipu cord colours are encoded in the database using Ascher colour
+codes
+[Ascher, Marcia; Robert Ascher (1978). Code of the Quipu: Databook. Ann Arbor: University of Michigan Press. ASIN B0006X3SV4.]
+which is an adapated form of ISCC-NBS colour coding, a standard from the
+1939
+[D. B. Judd and Kenneth L. Kelly (1939). “Method of designating colors and a dictionary”. Journal of Research of the National Bureau of Standards 23, p 355. RP1239.]
+this was converted to hex RGB values required for the visualisation
+using this website[http://tx4.us/nbs-iscc.htm].
 
 # PixelQuipu
 
@@ -45,20 +52,17 @@ The Graphviz visualisations have quite a few limitations, as they tend
 to make very large images, and there is limited control over how they
 are drawn. We needed to get more of an overview of the data, displaying
 the knots in the right positions with the pendants being the right
-length.
-
-Meet the pixelquipu!
+length. A new system was written to display a Quipu directly from the Harvard dataset:
 
 ![](figures/ur018.png)
 
-These are drawn using a python script which reads the Harvard Quipu
-Database and renders quipu structure using the correct colours. The
-knots are shown as a single pixel attached to the pendant, with a colour
-code of red as single knot, green for a long knot and blue as a figure
-of eight knot (yellow is unknown or missing). The value of the knot sets
-the brightness of the pixel. The colour variations for the pendants are
-working, but no difference between twisted and alternating colours, also
-no twist direction is visualised yet.
+The knots are shown as a single pixel attached to the pendant, with a
+colour code of red as single knot, green for a long knot and blue as a
+figure of eight knot (yellow is unknown or missing). We are interested
+in the overall data rather than the specific values so the value of the
+knot sets the brightness of the pixel. The colour variations for the
+pendants are reresented, but there is no difference between twisted and
+alternating colours, also no twist direction is visualised.
 
 ![](figures/hp017.png)
 
