@@ -1,26 +1,28 @@
 # Coding with Knots
 
-The Inca empire flourished to up to 37 million people, without the need
-of money or a written language. We know that numeric information was
-stored using Khipu, a digital knot based recording system which was used
-in combination with black and white stones to read and calculate. Two
-thirds of the quipus disovered are un-translated, and do not fit into the
-known numeric coding system – what information do they hold?
+The Inca empire flourished at it's height to 37 million people, without
+the need of money or a written language. We know that numeric
+information was stored by the Incas using Quipu, a digital knot based
+recording system which was used in combination with black and white
+stones to read and calculate[]. Two thirds of the quipus disovered are
+un-translated, and do not fit into the known numeric coding system.
 
 ![](figures/Yupana.jpg)
+
 A Spanish illustration of a Khipukamayuq (knot maker/keeper)
  
 ![](figures/quipu-wari)
+
 A close up of a small quipu showing undecyphered changes in colour, material and twist.
 
 As a civilisation coming to terms with transitions to digital forms of
-social organisation, the Incas can provide us with a useful counterpoint
+social organisation, the Incas provide us with a useful counterpoint
 with which to understand our relationships with technology.
 
 Much of the data contained within the Inca's knots are still a mystery
 to archaeological research, and there may be value in bringing a
-cross-disciplinary approach to the problem as artists, musicians and
-programmers working with thread.
+cross-disciplinary approach, applying diffent visualisation and
+sonification methods to this problem.
 
 The data available to us via the Harvard Quipu Archive[] is a set of
 Quipus encoded with information on thread type, knot type and position,
@@ -162,34 +164,6 @@ This figure shows the local entropy for all the Quipu.
 
 # Sonification
 
-To start with Dave briefly introduced the Inca civilisation, some of
-their scientific achievements and very different understanding of time
-and how much of this culture remains in current societies in the
-region. We looked at the context in which we think quipus were used, as
-the basis of organisation (with threads) of a large empire with no money
-or other forms of written record. Moving on to our tools we explored
-graphviz, and experimented a little with improving the visualisation
-then moving in to the world of supercollider we explored the data
-provided by the dot files.
-
-It turned out to be too limiting to interpret only the graph drawing
-instructions in supercollider, so we found we could include more
-complete information as ‘hidden data’ (twist, length of the pendants or
-type, value and spin of the knots). These extra data elements could be
-added in such a way as to make them silently ignored by graphviz for
-visualisation. This saved a lot of time needing to come up with another
-intermediate format.
-
-We also needed some overview of the entire database, in order to search
-for interesting quipu to sonify. Various quipus have been partially
-understood, for example some possibly contain data structures for
-calendar information based on solar and lunar time. Others contain
-accounting data, with matching hierarchical records found in other
-quipus. The most mysterious are so called ‘narrative quipus’ which don’t
-seem to fit the decimal system at all, meaning the knots don’t line up
-neatly in rows for reading in term of units, tens, hundreds and
-thousands.
-
 When the significance of the structure of a specific medium is unknown,
 sonification can be a way to gain new insight. There are various reasons
 for this, which have partly to do with the way understanding is coupled
@@ -198,16 +172,15 @@ time and this is time we spend with absorbing a texture and its
 potential internal connections.
 
 But there are very many different sonification approaches in a
-sonification laboratory – which one to choose? In the seminar we
-discussed for a while the general problem, namely how to understand
-graphs as time series, which is not always easy: many different
-non-trivial paths are possible. The quipus have a very distinct shape: a
-rather long series of small graphs, each of which have a couple of
-potentially relevant, but very different dimensions (such as color,
-number, length). Because sonification is particularly good at giving
-insight into parallel serial data, our first sketch was to treat the
-series of pendants from one end of the primary cord to the other, as a
-series in time (as you would do with a text).
+sonification laboratory – which one to choose? Quipu present specific
+challenges, namely how to understand graphs as time series, which is not
+always easy: many different non-trivial paths are possible. The quipus
+have a very distinct shape: a rather long series of small graphs, each
+of which have a couple of potentially relevant, but very different
+dimensions (such as color, number, length). Because sonification is
+particularly good at giving insight into parallel serial data, our first
+sketch was to treat the series of pendants from one end of the primary
+cord to the other, as a series in time (as you would do with a text).
 
 The current state of research makes it plausible that the colours used
 in quipus are of significance, but it is so far unclear of what. The
@@ -223,15 +196,10 @@ a surprisingly rich rhythmic structure, which would be easy to overlook
 visually. This gave us some confidence that we should pursue this
 direction a little further.
 
-The next day we began by going back to the data formats, and Dave
-included a number of data dimensions to the graphviz files. Especially
-interesting were arrays of colours, which represent alternating coloured
-threads, and some binary opposed properties, like ply and knot
-orientation. Some more reading about the interpretations of
-archaeological findings, we found two promising quipus which made us
-curious. The paper by Juliana Martins on the astronomical analysis of an
-Inca Quipu pointed to two interesting candidates from Leymebamba (UR006
-and UR009), which we began to work on in the afternoon.
+After researching about the interpretations of archaeological findings,
+we found two promising quipus which made us curious. The paper by
+Juliana Martins[] on the astronomical analysis of an Inca Quipu pointed
+to two interesting candidates from Leymebamba (UR006 and UR009).
 
 Here is a first result (UR006):
 
@@ -239,7 +207,6 @@ You can hear in this example that each short sound event (about 1/10 of
 a second an shorter as we go down the subsidiaries) has a number of
 independent timbral properties. Here is an overview of what “quipu
 dimension” is mapped onto which sound dimension:
-
 
 colour 	sine tone spectrum of three partials
 branching level 	duration between sound grains (inter onset duration)
@@ -254,4 +221,15 @@ that have subsidiaries (side branches). In various dimensions rhythmic
 patterns appear, which partly coincide and partly remain
 independent. Also, in some moments, we can hear sudden changes of the
 overall pattern, indicating a transition into a different logic.
+
+# Conclusions
+
+We have demonstrated a range of visualisation and sonification
+experiments on quipu data. Entropy analysis and visualisation can be
+used to give overviews of both the relationship between quipu across the
+corpus as well as structural changes contained within them. 
+ 
+Listening to sonification allows us to filter the information channels
+in the quipu and experience them in a different form....
+
 
