@@ -4,14 +4,14 @@ The Inca empire flourished at it's height to 37 million people, without
 the need of money or a written language. We know that numeric
 information was stored by the Incas using Quipu, a digital knot based
 recording system which was used in combination with black and white
-stones to read and calculate[]. Two thirds of the quipus disovered are
-un-translated, and do not fit into the known numeric coding system.
+stones to read and calculate[]. Two thirds of the quipus discovered are
+untranslated, and do not fit into the known numeric coding system.
 
 ![](figures/Yupana.jpg)
 
 A Spanish illustration of a Khipukamayuq (knot maker/keeper)
- 
-![](figures/quipu-wari)
+
+![](figures/quipu-wari.jpg)
 
 A close up of a small quipu showing undecyphered changes in colour, material and twist.
 
@@ -19,14 +19,18 @@ As a civilisation coming to terms with transitions to digital forms of
 social organisation, the Incas provide us with a useful counterpoint
 with which to understand our relationships with technology.
 
-Much of the data contained within the Inca's knots are still a mystery
+Much of the data contained within the Inca's knots are still completely unknown
 to archaeological research, and there may be value in bringing a
-cross-disciplinary approach, applying diffent visualisation and
-sonification methods to this problem.
+cross-disciplinary approach, applying different visualisation and
+sonification methods to this problem. These methods, becoming attuned to what we try to convey with them, in turn may change the way we approach contemporary data.
 
-The data available to us via the Harvard Quipu Archive[] is a set of
-Quipus encoded with information on thread type, knot type and position,
-colour and the currently understood base 10 numeric data.
+The information available to us via the database of the Harvard Quipu Archive[http://khipukamayuq.fas.harvard.edu/] is derived from a set of Quipus encoded with information on thread type, knot type and position, colour and the currently understood base 10 numeric encodings.
+
+## Methods
+
+How to approach a representation of which we know that we don't know *what* it represents? Even more, a representation of which we don't know *how* it represented? It is reported that quipus were reformulated all the time, they were a dynamic medium, more like a chalkboard than a book; and we cannot take it as a given that they were read from left to right only. The problem resembles that of the archeological reconstruction classical *chaînes opératoires* in the production process of paleolithic stone tools, only that here, the resulting artefact, rather than only a result, is meant to convey information.
+
+Thus, the best we can do here is to propose a heuristic widening of the horizon of translations, both in modality (image and sound) and in temporality (reading methods).
 
 ## Visualisation
 
@@ -228,9 +232,7 @@ overall pattern, indicating a transition into a different logic.
 We have demonstrated a range of visualisation and sonification
 experiments on quipu data. Entropy analysis and visualisation can be
 used to give overviews of both the relationship between quipu across the
-corpus as well as structural changes contained within them. 
- 
+corpus as well as structural changes contained within them.
+
 Listening to sonification allows us to filter the information channels
 in the quipu and experience them in a different form....
-
-
