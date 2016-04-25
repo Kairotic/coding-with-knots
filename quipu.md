@@ -70,8 +70,10 @@ colour code of red as single knot, green for a long knot and blue as a
 figure of eight knot (yellow is unknown or missing). We are interested
 in the overall data rather than the specific values so the value of the
 knot sets the brightness of the pixel. The colour variations for the
-pendants are reresented, but there is no difference between twisted and
+pendants are represented, but there is no difference between twisted and
 alternating colours, also no twist direction is visualised.
+
+Such a representation makes it easier to compare whole quipus, to compare their parts, to find reoccurring details and to shift focus from global to local structure.
 
 ![](figures/hp017.png)
 
@@ -99,9 +101,9 @@ containing any knots?
 
 ![](figures/UR1176.png)
 
-The original thinking of the pixelquipu was to attempt to fit all the
+The original idea of the pixelquipu was the attempt to fit all the
 quipus on a single page for viewing, as it represents them with the
-absolute minimum pixels required. Here are both pendant colour and
+absolute minimum pixels required. So finally, here are both pendant colour and
 entropy shown for all 247 quipu we have the data for:
 
 ![](figures/all.png)
@@ -111,7 +113,7 @@ entropy shown for all 247 quipu we have the data for:
 As we have so little idea what the Inca are telling us in their Quipu,
 it seems appropriate to add a cryptanalysis approach to our toolkit of
 inquiry. One of the first things that a cryptanalyst will do when
-inspecting an unknown system is to visualise it’s entropy in order to
+inspecting an unknown system is to visualise its entropy in order to
 get a handle on structures or patterns in the underlying
 information. Entropy[shannon] is a calculation of the minimum knowledge
 contained by some amount of data, and is a proof that information is
