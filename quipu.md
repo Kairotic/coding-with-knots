@@ -115,16 +115,16 @@ it seems appropriate to add a cryptanalysis approach to our toolkit of
 inquiry. One of the first things that a cryptanalyst will do when
 inspecting an unknown system is to visualise its entropy in order to
 get a handle on structures or patterns in the underlying
-information. Entropy[shannon] is a calculation of the minimum knowledge
-contained by some amount of data, and is a proof that information is
-bound by the rules of physics.
+information. The concepts of entropy differ very much in the different
+theories. Here, for simplicity, we use entropy as [shannon and weaver] defined it:
+a measure of the *minimum* possible "knowledge" implied by some amount of data. Entropy thereby describes how representation is bounded by specific laws of physics.
 
 Here are all the quipu in the Harvard database in order of average
-entropy bits they contain (only listing every other quipu ID):
+ entropy bits they represent (only listing every other quipu ID):
 
 ![](figures/entropy-per-quipu.png)
 
-This graph is calculated by making lists of all the discreet data of the
+This graph is calculated by making lists of all the discrete data of the
 same type, e.g. knot value, type, tying direction, pendant colours and
 ply direction (ignoring lengths and knot positions as these are
 continuous) – then calculating Shannon entropy on histograms for each
