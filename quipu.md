@@ -30,7 +30,7 @@ The information available to us via the database of the Harvard Quipu Archive[ht
 
 How to approach something of which we only know that it represents something we don't know? Even more, where we don't know in what way it is represented? From reports we learn that quipus were reformulated in use – they were a dynamic medium, more like a chalkboard than a book; they were used to archive, to convey, and operate on information. Resembling scripture, we still cannot take it as a given that they were read from left to right only.
 
-The problem resembles that of the archeological reconstruction of *chaînes opératoires*: the multi-faceted paths of actions that resulted in paleolithic stone tools, paths which sometimes can be read out of the left-overs. Only that here, the resulting artefact, rather than merely a result, is meant to actively convey and compute information. Where the translation and computation practice is unknown, however, progress is difficult.
+The problem resembles that of the archeological reconstruction of *chaînes opératoires*: the multi-faceted paths of actions that resulted in paleolithic stone tools, paths which sometimes can be read out of the left-overs [Peter Bleed. Trees or Chains, Links or Branches: Conceptual Alternatives for Consideration of Stone Tool Production and Other Sequential Activities, Journal of Archaeological Method and Theory 8 (2001), no. 1, 101–127]. Only that here, the resulting artefact, rather than merely a result, is meant to actively convey and compute information. Where the translation and computation practice is unknown, however, progress is difficult.
 
 For the time being, the best we can do is to superpose the left-overs of past methods with our own translational and computational practices, and hope for a heuristic widening of the horizon. In the following we briefly address what we have done so far in the direction of a widening: in *modality* (image and sound) on the one hand, and in *temporality* (reading methods), on the other.
 
@@ -156,7 +156,7 @@ is fairly uniform, and is not clustered in any way which would indicate
 different modes or categories of quipu. We can also use this technique
 to located outliers to inspect further.
 
-As well as looking at a quipu as a descreet unit, we can also look
+As well as looking at a quipu as a discrete unit, we can also look
 inside them and view their structure in terms of relative entropy. This
 is done below hierarchically, so a pendant’s entropy (shown as
 brightness) is that of its data plus all the sub-pendants, which seemed
@@ -172,7 +172,7 @@ This figure shows the local entropy for all the Quipu.
 
 # Sonification
 
-When the significance of the structure of a specific medium is unknown,
+Where the significance of the structure of a specific medium is unknown,
 sonification can be a way to gain new insight. There are various reasons
 for this, which have partly to do with the way understanding is coupled
 with perception, partly also simply with the fact that listening takes
@@ -180,7 +180,10 @@ time and this is time we spend with absorbing a texture and its
 potential internal connections.
 
 But there are very many different sonification approaches in a
-sonification laboratory – which one to choose? Quipu present specific
+sonification laboratory [Till Bovermann, Julian Rohrhuber, and Alberto de Campo, Laboratory Methods for Experimental Sonification, The Sonification Handbook, Logos Publishing House, Berlin, 2011] – which one to choose?
+Visualisation offers the advantage of a very differentiated spatial distribution. By contrast, sonification is an excessively temporal method, which means that it can not only animate relationships, as one would do with a moving image, but everything is conveyed through oscillation.
+
+Quipu present specific
 challenges, namely how to understand graphs as time series, which is not
 always easy: many different non-trivial paths are possible. The quipus
 have a very distinct shape: a rather long series of small graphs, each
