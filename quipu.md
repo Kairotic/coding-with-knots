@@ -28,9 +28,11 @@ The information available to us via the database of the Harvard Quipu Archive[ht
 
 ## Methods
 
-How to approach a representation of which we know that we don't know *what* it represents? Even more, a representation of which we don't know *how* it represented? It is reported that quipus were reformulated all the time, they were a dynamic medium, more like a chalkboard than a book; and we cannot take it as a given that they were read from left to right only. The problem resembles that of the archeological reconstruction classical *chaînes opératoires* in the production process of paleolithic stone tools, only that here, the resulting artefact, rather than only a result, is meant to convey information.
+How to approach something of which we only know that it represents something we don't know? Even more, where we don't know in what way it is represented? From reports we learn that quipus were reformulated in use – they were a dynamic medium, more like a chalkboard than a book; they were used to archive, to convey, and operate on information. Resembling scripture, we still cannot take it as a given that they were read from left to right only.
 
-Thus, the best we can do here is to propose a heuristic widening of the horizon of translations, both in modality (image and sound) and in temporality (reading methods).
+The problem resembles that of the archeological reconstruction of *chaînes opératoires*: the multi-faceted paths of actions that resulted in paleolithic stone tools, paths which sometimes can be read out of the left-overs. Only that here, the resulting artefact, rather than merely a result, is meant to actively convey and compute information. Where the translation and computation practice is unknown, however, progress is difficult.
+
+For the time being, the best we can do is to superpose the left-overs of past methods with our own translational and computational practices, and hope for a heuristic widening of the horizon. In the following we briefly address what we have done so far in the direction of a widening: in *modality* (image and sound) on the one hand, and in *temporality* (reading methods), on the other.
 
 ## Visualisation
 
@@ -56,7 +58,7 @@ using this website[http://tx4.us/nbs-iscc.htm].
 
 The Graphviz visualisations have quite a few limitations, as they tend
 to make very large images, and there is limited control over how they
-are drawn. We needed to get more of an overview of the data, displaying
+are drawn. Topologically oriented displays are naturally limited where metrics are at stake. We needed to get more of an overview of the data, displaying
 the knots in the right positions with the pendants being the right
 length. A new 'pixelquipu' system[] was written to display a Quipu
 directly from the Harvard dataset:
