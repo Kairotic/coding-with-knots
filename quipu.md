@@ -171,34 +171,48 @@ This figure shows the local entropy for all the Quipu.
 ![](figures/entropy-local.png)
 
 # Sonification
+## On the method
 
 Where the significance of the structure of a specific medium is unknown,
 sonification can be a way to gain new insight. There are various reasons
 for this, which have partly to do with the way understanding is coupled
-with perception, partly also simply with the fact that listening takes
+with perception. Partly it is also due to the fact that listening takes
 time and this is time we spend with absorbing a texture and its
 potential internal connections.
 
-But there are very many different sonification approaches in a
-sonification laboratory [Till Bovermann, Julian Rohrhuber, and Alberto de Campo, Laboratory Methods for Experimental Sonification, The Sonification Handbook, Logos Publishing House, Berlin, 2011] – which one to choose?
 Visualisation offers the advantage of a very differentiated spatial distribution. By contrast, sonification is an excessively temporal method, which means that it can not only animate relationships, as one would do with a moving image, but everything is conveyed through oscillation.
 
-Quipu present specific
-challenges, namely how to understand graphs as time series, which is not
-always easy: many different non-trivial paths are possible. The quipus
-have a very distinct shape: a rather long series of small graphs, each
-of which have a couple of potentially relevant, but very different
+But there are very many different sonification approaches in a
+sonification laboratory [Till Bovermann, Julian Rohrhuber, and Alberto de Campo, Laboratory Methods for Experimental Sonification, The Sonification Handbook, Logos Publishing House, Berlin, 2011] – which one to choose if we want to better understand quipus?
+
+
+Our case presents specific
+challenges, because quipus are a branching structure, which, instead of just being laid out in space, has to be distributed in a time series.
+This obstacle has the positive effect that it broaches the tacit assumptions that remain hidden in pictorial representation: we don't know the correct reading order, and out of the many possible paths, many are non-trivial. Also, reading orders that were not used by the quipu-makers may reveal important facts about what they encode.
+
+In our first experiments, we set up a system programmable in realtime so that we could quickly try out divergent ideas.
+
+## Sonification experiments
+### Thread colour
+
+Quipus have a very distinct shape: a rather long series of small graphs, each
+of which has a couple of potentially relevant, but very different
 dimensions (such as color, number, length). Because sonification is
 particularly good at giving insight into parallel serial data, our first
 sketch was to treat the series of pendants from one end of the primary
-cord to the other, as a series in time (as you would do with a text).
+cord to the next, as a series in time (as you would do with a text).
 
 The current state of research makes it plausible that the colours used
 in quipus are of significance, but it is so far unclear of what. The
 shades of colours are subtle, as is their possible meaning. To start
 with, we sonified the colour pattern of the quipu UR004 in a very simple
 way: a series of very short sine tone chords represent the red, green
-and blue components:
+and blue components. The different colours of each pendant were thereby read like a musical chord:
+
+![](figures/UR004-spectrum.png)
+
+![](figures/UR004-spectrum-part.png)
+
 
 This causes tones of grey to sound like a single tone, and the
 difference between components stands out as distance between separate
@@ -212,11 +226,12 @@ we found two promising quipus which made us curious. The paper by
 Juliana Martins[] on the astronomical analysis of an Inca Quipu pointed
 to two interesting candidates from Leymebamba (UR006 and UR009).
 
-Here is a first result (UR006):
+This time, we sonically displayed more of the data dimensions. Here is a first result (UR006):
 
-You can hear in this example that each short sound event (about 1/10 of
-a second an shorter as we go down the subsidiaries) has a number of
-independent timbral properties. Here is an overview of what “quipu
+
+![](figures/UR006-spectrum.png)
+
+It is not well visible in the spectrogram, but audible that each short sound event (about 1/10 of a second an shorter as we go down the subsidiaries) has a number of independent timbral properties. Here is an overview of what “quipu
 dimension” is mapped onto which sound dimension:
 
 | quipu | sound |
