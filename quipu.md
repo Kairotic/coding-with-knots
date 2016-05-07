@@ -190,7 +190,8 @@ Our case presents specific
 challenges, because quipus are a branching structure, which, instead of just being laid out in space, has to be distributed in a time series.
 This obstacle has the positive effect that it broaches the tacit assumptions that remain hidden in pictorial representation: we don't know the correct reading order, and out of the many possible paths, many are non-trivial. Also, reading orders that were not used by the quipu-makers may reveal important facts about what they encode.
 
-In our first experiments, we set up a system programmable in realtime so that we could quickly try out divergent ideas.
+Furthermore, however, the material qualities of quipus present us with the challenge of having many levels of structured properties, including colours, knot positions, knot types, and ply. In our first experiments, we used sonification to juxtapose them in time. For this, we developed a system programmable in realtime so that we could quickly try out divergent ideas.
+
 
 ## Sonification experiments
 ### Thread colour
@@ -221,6 +222,8 @@ a surprisingly rich rhythmic structure, which would be easy to overlook
 visually. This gave us some confidence that we should pursue this
 direction a little further.
 
+### Multidimensional Display
+
 After researching about the interpretations of archaeological findings,
 we found two promising quipus which made us curious. The paper by
 Juliana Martins[] on the astronomical analysis of an Inca Quipu pointed
@@ -231,7 +234,7 @@ This time, we sonically displayed more of the data dimensions. Here is a first r
 
 ![](figures/UR006-spectrum.png)
 
-It is not well visible in the spectrogram, but audible that each short sound event (about 1/10 of a second an shorter as we go down the subsidiaries) has a number of independent timbral properties. Here is an overview of what “quipu
+It is not well visible in the spectrogram but audible that each short sound event (about 1/10 of a second an shorter as we go down the subsidiaries) has a number of independent timbral properties, some of which have significant pattern across longer sections. Here is an overview of what “quipu
 dimension” is mapped onto which sound dimension:
 
 | quipu | sound |
