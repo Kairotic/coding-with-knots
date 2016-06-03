@@ -192,9 +192,27 @@ This obstacle has the positive effect that it broaches the tacit assumptions tha
 
 Furthermore, however, the material qualities of quipus present us with the challenge of having many levels of structured properties, including colours, knot positions, knot types, and ply. In our first experiments, we used sonification to juxtapose them in time. For this, we developed a system programmable in realtime so that we could quickly try out divergent ideas.
 
+Our experiments used the computer language SuperCollider, which in its abstraction level is optimal for the task at hand. Most of the program text can be changed at runtime, so that no graphical user interface precludes ideas of the researchers. The language is relatively well documented, and can be easily extended toward specific needs. A typical program in our system looks as follows:
+
+```
+// inka telefax
+(
+Tdef(\x, {
+	~traverse.(~data, { |x|
+		var note = x[\colours] / 255 * 32;
+		if(note.notEmpty) {
+			(instrument: \sin, note: note, sustain: 0.1).play;
+		};
+		0.1.wait;
+	})
+}).play
+)
+```
+
+In the following, we explain the motivations and outcomes of such scripts starting from a single dimension (here the sonification of thread colour) and the concurrent display of multiple dimensions.
 
 ## Sonification experiments
-### Thread colour
+### Thread colour: a single dimension display
 
 Quipus have a very distinct shape: a rather long series of small graphs, each
 of which has a couple of potentially relevant, but very different
@@ -222,9 +240,9 @@ a surprisingly rich rhythmic structure, which would be easy to overlook
 visually. This gave us some confidence that we should pursue this
 direction a little further.
 
-### Multidimensional Display
+### Superposition: a multidimensional display
 
-After researching about the interpretations of archaeological findings,
+After an inquiry about the interpretations of archaeological findings,
 we found two promising quipus which made us curious. The paper by
 Juliana Martins[] on the astronomical analysis of an Inca Quipu pointed
 to two interesting candidates from Leymebamba (UR006 and UR009).
@@ -251,6 +269,36 @@ that have subsidiaries (side branches). In various dimensions rhythmic
 patterns appear, which partly coincide and partly remain
 independent. Also, in some moments, we can hear sudden changes of the
 overall pattern, indicating a transition into a different logic.
+
+You can see how the multidimensional display is a relaiviely straightforward extension of the single dimension one.
+```
+(
+Tdef(\x, {
+	var pani = ('R':-1, 'V':1, 'U':0);
+	var plyi = ('S': 0, 'Z': 1, 'U': 0.5);
+	~traverse.(~data, { |x, level|
+		var colours = x[\colours], note, pan, len, ply;
+		var dur = 1/2 ** (level - 1) / 10;
+		if(colours.notEmpty) {
+			pan = pani[x[\pendant_attach]];
+			ply = plyi[x[\pendant_ply]];
+			len = x[\pendant_length] ? 25 / 25;
+			note = x[\colours] / 255 * 36 + 12;
+			(
+				note: note,
+				dur: dur,
+				instrument: \sin,
+				amp: 0.1/3,
+				pan: pan,
+				legato:len * 1.5,
+				ply: ply
+			).play;
+		};
+		dur.wait;
+	})
+}).play
+)
+```
 
 
 # Conclusions
