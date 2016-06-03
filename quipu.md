@@ -252,12 +252,11 @@ patterns appear, which partly coincide and partly remain
 independent. Also, in some moments, we can hear sudden changes of the
 overall pattern, indicating a transition into a different logic.
 
+
 # Conclusions
 
-We have demonstrated a range of visualisation and sonification
-experiments on quipu data. Entropy analysis and visualisation can be
-used to give overviews of both the relationship between quipu across the
-corpus as well as structural changes contained within them.
+Weaving in the broadest sense of the term covers an intermediate space between what has been called "form and function". Form usually being that of non-functional representation or decoration, function usually that of non-formal use for specific practical purposes. These terms are misplaced, as it is commonly acknowledged, because decorative and iconic detail at least has a social function. Quipus are a specific case, however, because here, the decorative detail serves a representative function, mostly, but perhaps not exclusively, an administrative one. Because of the small number of extant artefacts, their retrospective decoding becomes a difficult task; at the same time, all measurable information about them has been translated to the predominant administrative tool of our culture, excel sheets.
 
-Listening to sonification allows us to filter the information channels
-in the quipu and experience them in a different form....
+By proposing some experimental "laboratory methods" [ref] for the sonification of those data sets, we hope to have broadened the perspective of their reading. Thereby already a simple entropy analysis and the concise visualisation provides overviews of both the relationship between quipu across the corpus as well as structural changes contained within them.
+
+Listening to the inner structure of these artefacts is a method of systematic spreading of awareness over time. Unlike an image which can be read in any order, a sonification aligns the reading direction, while keeping undecided what is being listened to. Sound thereby has very different affordances than the common descriptive, diagrammatic and numerical methods. Used by artists and composers, such sonifications can cultivate a movement between archeological interest and aesthetic appreciation. Used by archeologists as a methodological alternative, it might lead to new ideas of how to read quipus in their cultural context.
