@@ -200,9 +200,9 @@ Our experiments used the computer language SuperCollider, which in its abstracti
 Tdef(\x, {
 	~traverse.(~data, { |x|
 		var note = x[\colours] / 255 * 32;
-		if(note.notEmpty) {
+		if(note.notEmpty, {
 			(instrument: \sin, note: note, sustain: 0.1).play;
-		};
+		});
 		0.1.wait;
 	})
 }).play
@@ -279,7 +279,7 @@ Tdef(\x, {
 	~traverse.(~data, { |x, level|
 		var colours = x[\colours], note, pan, len, ply;
 		var dur = 1/2 ** (level - 1) / 10;
-		if(colours.notEmpty) {
+		if(colours.notEmpty, {
 			pan = pani[x[\pendant_attach]];
 			ply = plyi[x[\pendant_ply]];
 			len = x[\pendant_length] ? 25 / 25;
@@ -293,7 +293,7 @@ Tdef(\x, {
 				legato:len * 1.5,
 				ply: ply
 			).play;
-		};
+		});
 		dur.wait;
 	})
 }).play
