@@ -4,7 +4,7 @@ The Inca empire flourished at it's height to 37 million people, without
 the need of money or a written language. We know that numeric
 information was stored by the Incas using Quipu, a digital knot based
 recording system which was used in combination with black and white
-stones to read and calculate[]. Two thirds of the quipus discovered are
+stones to read and calculate[]. Not many of them are extant, most were burned in the colonial wars. Until today, two thirds of the quipus discovered are
 untranslated, and do not fit into the known numeric coding system.
 
 ![](figures/Yupana.jpg)
@@ -30,17 +30,17 @@ The information available to us via the database of the Harvard Quipu Archive[ht
 
 How to approach something of which we only know that it represents something we don't know? Even more, where we don't know in what way it is represented? From reports we learn that quipus were reformulated in use – they were a dynamic medium, more like a chalkboard than a book; they were used to archive, to convey, and operate on information. Resembling scripture, we still cannot take it as a given that they were read from left to right only.
 
-The problem resembles that of the archeological reconstruction of *chaînes opératoires*: the multi-faceted paths of actions that resulted in paleolithic stone tools, paths which sometimes can be read out of the left-overs [Peter Bleed. Trees or Chains, Links or Branches: Conceptual Alternatives for Consideration of Stone Tool Production and Other Sequential Activities, Journal of Archaeological Method and Theory 8 (2001), no. 1, 101–127]. Only that here, the resulting artefact, rather than merely a result, is meant to actively convey and compute information. Where the translation and computation practice is unknown, however, progress is difficult.
+The problem resembles that of the archeological reconstruction of *chaînes opératoires*: the ramified paths of actions that were performed in the production of paleolithic stone tools, paths which sometimes can be read out of the artefacts and the left-overs and traces of this process [Peter Bleed. Trees or Chains, Links or Branches: Conceptual Alternatives for Consideration of Stone Tool Production and Other Sequential Activities, Journal of Archaeological Method and Theory 8 (2001), no. 1, 101–127]. Only that here, the resulting artefact, rather than merely a result, is meant to actively convey and compute information. Where the translation and computation practice is unknown, however, progress is difficult.
 
-For the time being, the best we can do is to superpose the left-overs of past methods with our own translational and computational practices, and hope for a heuristic widening of the horizon. In the following we briefly address what we have done so far in the direction of a widening: in *modality* (image and sound) on the one hand, and in *temporality* (reading methods), on the other.
+For the time being, perhaps the best we can do is to superpose the left-overs of past methods with our own translational and computational practices, and hope for a heuristic widening of the horizon. In the following we briefly address one particular way of such a heuristic: in *modality* (image and sound) on the one hand, and in *temporality* (reading methods), on the other.
 
 ## Visualisation
 
-To start with we needed to get a quick understanding of the types of
-structures present in Quipu, so a simple parser for the data was
+To get a first understanding of the types of
+structures present in Quipu, a simple parser for the data was
 constructed[] which then converted the data into a form readable by
-Graphviz[]. This provided us with schematic representation of the
-structure, knots and colours.
+the common command line application Graphviz[]. This convenient way to automatically layout tree structures provided us with a schematic representation of the
+structure of the record, with knots and colours.
 
 ![](figures/UR1138.xls.png)
 UR1138 rendered using Graphviz
@@ -56,9 +56,9 @@ using this website[http://tx4.us/nbs-iscc.htm].
 
 # PixelQuipu
 
-The Graphviz visualisations have quite a few limitations, as they tend
-to make very large images, and there is limited control over how they
-are drawn. Topologically oriented displays are naturally limited where metrics are at stake. We needed to get more of an overview of the data, displaying
+The Graphviz visualisations are quite limited, as they tend
+to result in very large images, and don't provide enough control over how they
+are drawn. Also, topologically oriented displays are naturally limited where metrics are at stake. We needed to get more of an overview of the data, displaying
 the knots in the right positions with the pendants being the right
 length. A new 'pixelquipu' system[] was written to display a Quipu
 directly from the Harvard dataset:
@@ -110,8 +110,8 @@ entropy shown for all 247 quipu we have the data for:
 
 # Entropy
 
-As we have so little idea what the Inca are telling us in their Quipu,
-it seems appropriate to add a cryptanalysis approach to our toolkit of
+As we have so little idea what the Inca are telling us (or rather each other) in their Quipu,
+it seems appropriate to add a basic cryptanalysis approach to our toolkit of
 inquiry. One of the first things that a cryptanalyst will do when
 inspecting an unknown system is to visualise its entropy in order to
 get a handle on structures or patterns in the underlying
@@ -177,7 +177,7 @@ Where the significance of the structure of a specific medium is unknown,
 sonification can be a way to gain new insight. There are various reasons
 for this, which have partly to do with the way understanding is coupled
 with perception. Partly it is also due to the fact that listening takes
-time and this is time we spend with absorbing a texture and its
+a specific time and this is time we spend with absorbing a texture and its
 potential internal connections.
 
 Visualisation offers the advantage of a very differentiated spatial distribution. By contrast, sonification is an excessively temporal method, which means that it can not only animate relationships, as one would do with a moving image, but everything is conveyed through oscillation.
@@ -188,9 +188,9 @@ sonification laboratory [Till Bovermann, Julian Rohrhuber, and Alberto de Campo,
 
 Our case presents specific
 challenges, because quipus are a branching structure, which, instead of just being laid out in space, has to be distributed in a time series.
-This obstacle has the positive effect that it broaches the tacit assumptions that remain hidden in pictorial representation: we don't know the correct reading order, and out of the many possible paths, many are non-trivial. Also, reading orders that were not used by the quipu-makers may reveal important facts about what they encode.
+This obstacle has the positive effect that it broaches the tacit assumptions that remain hidden in pictorial representation: in fact we do not know how the quipus were read, so that the  correct reading order is uncertain, and out of the many possible paths, many are non-trivial. Moreover, even reading orders that were not used by the quipu-makers may reveal important facts about what they encode.
 
-Furthermore, however, the material qualities of quipus present us with the challenge of having many levels of structured properties, including colours, knot positions, knot types, and ply. In our first experiments, we used sonification to juxtapose them in time. For this, we developed a system programmable in realtime so that we could quickly try out divergent ideas.
+The material qualities of quipus present us with the challenge of taking many levels of structured properties into account, including colours, knot positions, knot types, and ply. In our first experiments, we used sonification to juxtapose them in time.
 
 Our experiments used the computer language SuperCollider, which in its abstraction level is optimal for the task at hand. Most of the program text can be changed at runtime, so that no graphical user interface precludes ideas of the researchers. The language is relatively well documented, and can be easily extended toward specific needs. A typical program in our system looks as follows:
 
@@ -216,8 +216,7 @@ In the following, we explain the motivations and outcomes of such scripts starti
 
 Quipus have a very distinct shape: a rather long series of small graphs, each
 of which has a couple of potentially relevant, but very different
-dimensions (such as color, number, length). Because sonification is
-particularly good at giving insight into parallel serial data, our first
+dimensions (such as color, number, length). Because sonification can give good insight into parallel serial data, our first
 sketch was to treat the series of pendants from one end of the primary
 cord to the next, as a series in time (as you would do with a text).
 
@@ -242,7 +241,7 @@ direction a little further.
 
 ### Superposition: a multidimensional display
 
-After an inquiry about the interpretations of archaeological findings,
+After an inquiry in the interpretations of archaeological findings,
 we found two promising quipus which made us curious. The paper by
 Juliana Martins[] on the astronomical analysis of an Inca Quipu pointed
 to two interesting candidates from Leymebamba (UR006 and UR009).
