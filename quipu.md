@@ -299,7 +299,65 @@ Tdef(\x, {
 )
 ```
 
-### Listening to Knots
+### Knot-Spectra
+
+So far we have considered only the properties of the pendants themselves, which certainly stand out less than the more obvious knots which were tied in them. Some of the knot patterns have been interpreted as numerical records in a decimal base encoding. The counter check of reading them as additions (like on an abacus) is consistent, and where such calculations have been found, the Harvard data set contains the numerical interpretation as a value. There are many quipus, however, which do not fall into this category. Here knots most probably are of significance, but we lack of a matching interpretation. The attributes are: position, value, type (single, long, eight, or undefined), spin.
+
+
+We know from the numerical quipus that the place on the pendant is of significance, so that it makes sense to acoustically display this information. The following example is one from our experiments, where the known numerical value is interpreted as node (zero if not available), and is superposed with the spectral distribution derived from the position pattern. The spin is used as a pan position in the stereo field (left/right/center):
+
+```
+(
+Tdef(\x, {
+	~traverse.(~data, { |x, level|
+		var knots = x[\knots];
+		knots.do { |k|
+			var note, pan;
+			note = k[\value];
+			pan = k[\spin];
+			(
+        note:note,
+        harmonic: k[\position],
+        sustain: 0.01,
+        instrument: \sin,
+        sustain: 0.4,
+        pan: pan
+      ).play;
+		};
+		0.1.wait;
+	})
+}).play
+)
+
+```
+
+For another variant in sonifying the knot data, we used the multichannel sound system available in the experimental laboratory in Düsseldorf. The program code demonstrates that very little modification is necessary to use the spectral information as an offset into the eight channels:
+
+```
+  (
+  Tdef(\x, {
+  	~traverse.(~data, { |x, level|
+  		var knots = x[\knots];
+  		knots.do { |k|
+  			var note, pan;
+  			note = k[\value];
+  			pan = k[\spin];
+  			(
+          note:note,
+          out: k[\position] * (8 / 20),
+          sustain: 0.01,
+          instrument: \sin,
+          sustain: 0.4,
+          pan: pan
+        ).play;
+  		};
+  		0.1.wait;
+  	})
+  }).play
+  )
+```
+
+
 
 ### The Project "Inka Telefax. Listening to Precolumbian Administration without understanding a word"
 
