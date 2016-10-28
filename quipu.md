@@ -60,7 +60,7 @@ The Graphviz visualisations are quite limited, as they tend
 to result in very large images, and don't provide enough control over how they
 are drawn. Also, topologically oriented displays are naturally limited where metrics are at stake. We needed to get more of an overview of the data, displaying
 the knots in the right positions with the pendants being the right
-length. A new 'pixelquipu' system[] was written to display a Quipu
+length. A new 'pixelquipu' system[] was devised to display a Quipu
 directly from the Harvard dataset:
 
 ![](figures/ur018.png)
@@ -110,14 +110,16 @@ entropy shown for all 247 quipu we have the data for:
 
 # Entropy
 
-As we have so little idea what the Inca are telling us (or rather each other) in their Quipu,
+As we have so little idea what the Inca are telling us (or rather each other!) in their Quipu,
 it seems appropriate to add a basic cryptanalysis approach to our toolkit of
 inquiry. One of the first things that a cryptanalyst will do when
 inspecting an unknown system is to visualise its entropy in order to
 get a handle on structures or patterns in the underlying
 information. The concepts of entropy differ very much in the different
-theories. Here, for simplicity, we use entropy as [shannon and weaver] defined it:
-a measure of the *minimum* possible "knowledge" implied by some amount of data. Entropy thereby describes how representation is bounded by specific laws of physics.
+theories, and we should always keep in mind that the information concept itself depends on the theoretical context [for a still useful critique see for instance: Harold Garfinkel, Toward a Sociological Theory of lnformation, Paradigm Publishers, Boulder, London, 2008].
+
+Here, for simplicity, we use entropy as [shannon and weaver] defined it:
+a measure of the *minimum* possible knowledge some set of data may convey. Entropy thereby describes how representation is bounded by specific laws of physics, ignoring the unknown specific coupling between operations in quipu use ["We require that a system of signals and a system of information be capable of being not only coupled but *variably* coupled in the sense that while this information would depend upon signal characteristics that it not be given in one-to-one fashion with signal characteristics. We require that it be possible to perform physical operations that will affect it while at the same time logical operations like matching, counting, comparing, classifying, measuring, be possible with it."(ibid. p. 110)]
 
 Here are all the quipu in the Harvard database in order of average
  entropy bits they represent (only listing every other quipu ID):
