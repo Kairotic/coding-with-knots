@@ -395,12 +395,20 @@ task; at the same time, all measurable information about them has been
 translated to the predominant administrative tool of our culture,
 excel sheets.
 
+Our basic cryptanalysis gives us a comparison between different quipu,
+and shows that the differences between them are fairly continous - our
+entropy analyis has not revealed easily determined categories of quipu
+in the corpus in the dimentions that we compared. This may be
+surprising given that different Khipukamayuq may have employed
+different techniques, and that these may have evolved over time or
+distance. On the other hand, when we measure discontinuities of
+potential data storage within the quipu - we find areas of complexity
+along with areas of low information, further analysis may help to
+understand structural patterns.
+
 By proposing some experimental "laboratory methods" [ref] for the
 sonification of those data sets, we hope to have broadened the
-perspective of their reading. Thereby already a simple entropy
-analysis and the concise visualisation provided overviews of both the
-relationship between quipu across the corpus as well as structural
-changes contained within them.
+perspective of their reading. 
 
 Listening to the inner structure of these artefacts is a method of
 systematic spreading of awareness over time. Unlike an image which can
