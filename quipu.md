@@ -37,32 +37,12 @@ encodings.
 
 ## Methods
 
-How to approach something of which we only know that it represents
-something we don't know? Even more, where we don't know in what way it
-is represented? From reports we learn that quipus were reformulated in
-use – they were a dynamic medium, more like a chalkboard than a book;
-they were used to archive, to convey, and operate on
-information. Resembling scripture, we still cannot take it as a given
-that they were read from left to right only.
+How to approach something of which we only know for sure that it represents something, but something we don't know? Even more, where we don't know in what way it is represented? From reports we learn that quipus were reformulated in use – they were a dynamic medium, more like a chalkboard than a book; they were used to archive, to convey, and operate on information. Quipu are a "communication-based textile" [Sonja Andrew, Textile Semantics: Considering a Communication-based Reading of Textiles, Textile 6 (2008), no. 1, 32–65.] in a very literal sense. Resembling scripture, we still cannot take it as a given that they were read from left to right only.
 
-The problem resembles that of the archeological reconstruction of
-*chaînes opératoires*: the ramified paths of actions that were
-performed in the production of paleolithic stone tools, paths which
-sometimes can be read out of the artefacts and the left-overs and
-traces of this process [Peter Bleed. Trees or Chains, Links or
-Branches: Conceptual Alternatives for Consideration of Stone Tool
-Production and Other Sequential Activities, Journal of Archaeological
-Method and Theory 8 (2001), no. 1, 101–127]. Only that here, the
-resulting artefact, rather than merely a result, is meant to actively
-convey and compute information. Where the translation and computation
-practice is unknown, however, progress is difficult.
+The problem resembles that of the archeological reconstruction of *chaînes opératoires*: the ramified paths of actions that were performed in the production of paleolithic stone tools, paths which sometimes can be read out of the artefacts and the left-overs and traces of this process [Peter Bleed. Trees or Chains, Links or Branches: Conceptual Alternatives for Consideration of Stone Tool Production and Other Sequential Activities, Journal of Archaeological Method and Theory 8 (2001), no. 1, 101–127]. Only that here, the resulting artefact, rather than merely a result, is meant to actively convey and compute information. Where the translation and computation practice is unknown, however, progress is difficult.
 
-For the time being, perhaps the best we can do is to superimpose the
-left-overs of past methods with our own translational and
-computational practices, and hope for a heuristic widening of the
-horizon. In the following we briefly address one particular way of
-such a heuristic: in *modality* (image and sound) on the one hand, and
-in *temporality* (reading methods), on the other.
+For the time being, perhaps the best we can do is to superpose the left-overs of past methods with our own translational and computational practices, and hope for a heuristic widening of the horizon. In the following we briefly address one particular way of such a heuristic: in *modality* (image and sound) on the one hand, and in *temporality* (reading methods), on the other.
+
 
 ## Visualisation
 
@@ -88,13 +68,13 @@ website[http://tx4.us/nbs-iscc.htm].
 
 # PixelQuipu
 
-The Graphviz visualisations are quite limited, as they tend to result
-in very large images, and don't provide enough control over how they
-are drawn. Also, topologically oriented displays are naturally limited
-where metrics are at stake. We needed to get more of an overview of
-the data, displaying the knots in the right positions with the
-pendants being the right length. A new 'pixelquipu' system[] was
-written to display a Quipu directly from the Harvard dataset:
+
+The Graphviz visualisations are quite limited, as they tend
+to result in very large images, and don't provide enough control over how they
+are drawn. Also, topologically oriented displays are naturally limited where metrics are at stake. We needed to get more of an overview of the data, displaying
+the knots in the right positions with the pendants being the right
+length. A new 'pixelquipu' system[] was devised to display a Quipu
+directly from the Harvard dataset:
 
 ![](figures/ur018.png)
 
@@ -147,16 +127,16 @@ colour and entropy shown for all 247 quipu we have the data for:
 
 # Entropy
 
-As we have so little idea what the Inca are telling us (or rather each
-other) in their Quipu, it seems appropriate to add a basic
-cryptanalysis approach to our toolkit of inquiry. One of the first
-things that a cryptanalyst will do when inspecting an unknown system
-is to visualise its entropy in order to get a handle on structures or
-patterns in the underlying information. The concepts of entropy differ
-very much in the different theories. Here, for simplicity, we use
-entropy as [shannon and weaver] defined it: a measure of the *minimum*
-possible "knowledge" implied by some amount of data. Entropy thereby
-describes how representation is bounded by specific laws of physics.
+As we have so little idea what the Inca are telling us (or rather each other!) in their Quipu,
+it seems appropriate to add a basic cryptanalysis approach to our toolkit of
+inquiry. One of the first things that a cryptanalyst will do when
+inspecting an unknown system is to visualise its entropy in order to
+get a handle on structures or patterns in the underlying
+information. The concepts of entropy differ very much in the different
+theories, and we should always keep in mind that the information concept itself depends on the theoretical context [for a still useful critique see for instance: Harold Garfinkel, Toward a Sociological Theory of lnformation, Paradigm Publishers, Boulder, London, 2008].
+
+Here, for simplicity, we use entropy as [shannon and weaver] defined it:
+a measure of the *minimum* possible knowledge some set of data may convey. Entropy thereby describes how representation is bounded by specific laws of physics, ignoring the unknown specific coupling between operations in quipu use ["We require that a system of signals and a system of information be capable of being not only coupled but *variably* coupled in the sense that while this information would depend upon signal characteristics that it not be given in one-to-one fashion with signal characteristics. We require that it be possible to perform physical operations that will affect it while at the same time logical operations like matching, counting, comparing, classifying, measuring, be possible with it."(ibid. p. 110)]
 
 Here are all the quipu in the Harvard database in order of average
  entropy bits they represent (only listing every other quipu ID):
@@ -372,7 +352,65 @@ Tdef(\x, {
 )
 ```
 
-### Listening to Knots
+### Knot-Spectra
+
+So far we have considered only the properties of the pendants themselves, which certainly stand out less than the more obvious knots which were tied in them. Some of the knot patterns have been interpreted as numerical records in a decimal base encoding. The counter check of reading them as additions (like on an abacus) is consistent, and where such calculations have been found, the Harvard data set contains the numerical interpretation as a value. There are many quipus, however, which do not fall into this category. Here knots most probably are of significance, but we lack of a matching interpretation. The attributes are: position, value, type (single, long, eight, or undefined), spin.
+
+
+We know from the numerical quipus that the place on the pendant is of significance, so that it makes sense to acoustically display this information. The following example is one from our experiments, where the known numerical value is interpreted as node (zero if not available), and is superposed with the spectral distribution derived from the position pattern. The spin is used as a pan position in the stereo field (left/right/center):
+
+```
+(
+Tdef(\x, {
+	~traverse.(~data, { |x, level|
+		var knots = x[\knots];
+		knots.do { |k|
+			var note, pan;
+			note = k[\value];
+			pan = k[\spin];
+			(
+        note:note,
+        harmonic: k[\position],
+        sustain: 0.01,
+        instrument: \sin,
+        sustain: 0.4,
+        pan: pan
+      ).play;
+		};
+		0.1.wait;
+	})
+}).play
+)
+
+```
+
+For another variant in sonifying the knot data, we used the multichannel sound system available in the experimental laboratory in Düsseldorf. The program code demonstrates that very little modification is necessary to use the spectral information as an offset into the eight channels:
+
+```
+  (
+  Tdef(\x, {
+  	~traverse.(~data, { |x, level|
+  		var knots = x[\knots];
+  		knots.do { |k|
+  			var note, pan;
+  			note = k[\value];
+  			pan = k[\spin];
+  			(
+          note:note,
+          out: k[\position] * (8 / 20),
+          sustain: 0.01,
+          instrument: \sin,
+          sustain: 0.4,
+          pan: pan
+        ).play;
+  		};
+  		0.1.wait;
+  	})
+  }).play
+  )
+```
+
+
 
 ### The Project "Inka Telefax. Listening to Precolumbian Administration without understanding a word"
 
