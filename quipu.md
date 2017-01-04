@@ -1,22 +1,19 @@
 # Coding with Knots
 
-The Inca empire flourished at it's height to 37 million people,
+The Inca empire flourished at its height to 37 million people,
 without the need of money or a written language. We know that numeric
-information was stored by the Incas using Quipu, a digital knot based
+information was stored by the Incas using *quipus*, a digital knot based
 recording system which was used in combination with black and white
 stones to read and calculate[]. Not many of them are extant, most were
 burned in the colonial wars. Until today, two thirds of the quipus
-discovered are untranslated, and do not fit into the known numeric
+discovered are untranslated, and do not fit into any known numeric
 coding system.
 
-![](figures/Yupana.jpg)
+![A Spanish illustration of a Khipukamayuq (knot maker/keeper)](figures/Yupana.jpg)
 
-A Spanish illustration of a Khipukamayuq (knot maker/keeper)
-
-![](figures/quipu-wari.jpg)
-
-A close up of a small quipu showing undecyphered changes in colour,
+![A close up of a small quipu showing undecyphered changes in colour,
 material and twist.
+](figures/quipu-wari.jpg)
 
 As a civilisation coming to terms with transitions to digital forms of
 social organisation, the Incas provide us with a useful counterpoint
@@ -30,58 +27,52 @@ becoming attuned to what we try to convey with them, in turn may
 change the way we approach contemporary data.
 
 The information available to us via the database of the Harvard Quipu
-Archive[http://khipukamayuq.fas.harvard.edu/] is derived from a set of
-Quipus encoded with information on thread type, knot type and
+Archive^[The Harvard Quipu Archive is available at http://khipukamayuq.fas.harvard.edu/ (accessed 4th January 2017)] is derived from a set of
+quipus encoded with information on thread type, knot type, knot
 position, colour and the currently understood base 10 numeric
 encodings.
 
 ## Methods
 
-How to approach something of which we only know for sure that it represents something, but something we don't know? Even more, where we don't know in what way it is represented? From reports we learn that quipus were reformulated in use – they were a dynamic medium, more like a chalkboard than a book; they were used to archive, to convey, and operate on information. Quipu are a "communication-based textile" [Sonja Andrew, Textile Semantics: Considering a Communication-based Reading of Textiles, Textile 6 (2008), no. 1, 32–65.] in a very literal sense. Resembling scripture, we still cannot take it as a given that they were read from left to right only.
+How to approach something of which we only know for sure that it represents something, but something we don't know? Even more, where we don't know in what way it is represented? From reports we learn that quipus were reformulated in use --- they were a dynamic medium, more like a chalkboard than a book; they were used to archive, to convey, and operate on information. Quipus are a "communication-based textile" [Sonja Andrew, Textile Semantics: Considering a Communication-based Reading of Textiles, Textile 6 (2008), no. 1, 32–65.] in a very literal sense. Resembling scripture, we still cannot take it as a given that they were read from left to right only.
 
-The problem resembles that of the archeological reconstruction of *chaînes opératoires*: the ramified paths of actions that were performed in the production of paleolithic stone tools, paths which sometimes can be read out of the artefacts and the left-overs and traces of this process [Peter Bleed. Trees or Chains, Links or Branches: Conceptual Alternatives for Consideration of Stone Tool Production and Other Sequential Activities, Journal of Archaeological Method and Theory 8 (2001), no. 1, 101–127]. Only that here, the resulting artefact, rather than merely a result, is meant to actively convey and compute information. Where the translation and computation practice is unknown, however, progress is difficult.
+The problem resembles that of the archeological reconstruction of *chaînes opératoires*: the ramified paths of actions that were performed in the production of paleolithic stone tools, paths which sometimes can be read out of the artefacts and the left-overs and traces of this process [@Bleed2001]. Only that here, the resulting artefact, rather than merely a result, is meant to actively convey and compute information. Where the translation and computation practice is unknown, however, progress is difficult.
 
-For the time being, perhaps the best we can do is to superpose the left-overs of past methods with our own translational and computational practices, and hope for a heuristic widening of the horizon. In the following we briefly address one particular way of such a heuristic: in *modality* (image and sound) on the one hand, and in *temporality* (reading methods), on the other.
+For the time being, perhaps the best we can do is to superpose the left-overs of past methods with our own translational and computational practices, and hope for a heuristic widening of the horizon. In the following we briefly address one particular form of such a heuristic: in *modality* (image and sound) on the one hand, and in *temporality* (reading methods), on the other.
 
 
 ## Visualisation
 
 To get a first understanding of the types of structures present in
-Quipu, a simple parser for the data was constructed[] which then
+a quipu, a simple parser for the data was constructed[] which then
 converted the data into a form readable by the common command line
 application Graphviz[]. This convenient way to automatically layout
 tree structures provided us with a schematic representation of the
 structure of the record, with knots and colours.
 
-![](figures/UR1138.xls.png)
-UR1138 rendered using Graphviz
+![Quipu catalogued as #UR1138 rendered using Graphviz](figures/UR1138.xls.png)
 
 The quipu cord colours are encoded in the database using Ascher colour
-codes [Ascher, Marcia; Robert Ascher (1978). Code of the Quipu:
-Databook. Ann Arbor: University of Michigan Press. ASIN B0006X3SV4.]
-which is an adapated form of ISCC-NBS colour coding, a standard from
-the 1939 [D. B. Judd and Kenneth L. Kelly (1939). “Method of
-designating colors and a dictionary”. Journal of Research of the
-National Bureau of Standards 23, p 355. RP1239.]  this was converted
-to hex RGB values required for the visualisation using this
-website[http://tx4.us/nbs-iscc.htm].
+codes [@Ascher1978]
+which is an adapated form of ISCC-NBS colour coding, a standard provided by @Judd1939. This was converted
+to hex RGB values required for the visualisation using an online tool
+^[NBS/ISCC Color System http://tx4.us/nbs-iscc.htm, accessed 4th January 2017].
 
 # PixelQuipu
 
-
-The Graphviz visualisations are quite limited, as they tend
+The visualisations produced with Graphviz are quite limited, as they tend
 to result in very large images, and don't provide enough control over how they
 are drawn. Also, topologically oriented displays are naturally limited where metrics are at stake. We needed to get more of an overview of the data, displaying
 the knots in the right positions with the pendants being the right
-length. A new 'pixelquipu' system[] was devised to display a Quipu
+length. A new system[], which we have named *pixelquipu*, was devised to display a quipu
 directly from the Harvard dataset:
 
-![](figures/ur018.png)
+![Quipu #UR018 rendered with PixelQuipu](figures/ur018.png)
 
-The knots are shown as a single pixel attached to the pendant, with a
-colour code of red as single knot, green for a long knot and blue as a
-figure of eight knot (yellow is unknown or missing). We are interested
-in the overall data rather than the specific values so the value of
+Each knot is shown as a single pixel attached to the pendant, with a
+colour code of *red* as single knot, *green* for a long knot and *blue* as a
+figure of eight knot (*yellow* represents something unknown or missing). We are interested
+in the overall data rather than the specific values, so the value of
 the knot sets the brightness of the pixel. The colour variations for
 the pendants are represented, but there is no difference between
 twisted and alternating colours, also no twist direction is
@@ -91,7 +82,7 @@ Such a representation makes it easier to compare whole quipus, to
 compare their parts, to find reoccurring details and to shift focus
 from global to local structure.
 
-![](figures/hp017.png)
+![Quipu #HP017](figures/hp017.png)
 
 We can now look at some quipus in more detail – what was the purpose
 of the red and grey striped pendants in the quipu below? They contain
@@ -99,7 +90,7 @@ no knots, are they markers of some kind? This also seems to be a quipu
 where the knots do not follow the decimal coding pattern that we
 understand, they are mostly long knots of various values.
 
-![](figures/ur051.png)
+![Quipu #UR051](figures/ur051.png)
 
 There also seems to be data stored in different kinds of structure in
 the same quipu – the collection of sub-pendants below in the left side
@@ -107,7 +98,7 @@ presumably group data in a more hierarchical manner than the right
 side, which seems much more linear – and also a colour change
 emphasises this.
 
-![](figures/ur015.png)
+![Quipu #UR015](figures/ur015.png)
 
 Read left to right, this long quipu below seems very much like you’d
 expect binary data to look – some kind of header information or
@@ -116,34 +107,32 @@ twelve groups of eight grey pendants seem redundant – were these meant
 to be filled in later? Did they represent something important without
 containing any knots?
 
-![](figures/UR1176.png)
+![Quipu #UR1176](figures/UR1176.png)
 
 The original idea of the pixelquipu was the attempt to fit all the
 quipus on a single page for viewing, as it represents them with the
 absolute minimum pixels required. So finally, here are both pendant
 colour and entropy shown for all 247 quipu we have the data for:
 
-![](figures/all.png)
+![All 247 quipu in the collection](figures/all.png)
 
 # Entropy
 
-As we have so little idea what the Inca are telling us (or rather each other!) in their Quipu,
+As we have so little idea what the Inca are telling us (or rather each other!) in their quipus,
 it seems appropriate to add a basic cryptanalysis approach to our toolkit of
 inquiry. One of the first things that a cryptanalyst will do when
 inspecting an unknown system is to visualise its entropy in order to
 get a handle on structures or patterns in the underlying
 information. The concepts of entropy differ very much in the different
-theories, and we should always keep in mind that the information concept itself depends on the theoretical context [for a still useful critique see for instance: Harold Garfinkel, Toward a Sociological Theory of lnformation, Paradigm Publishers, Boulder, London, 2008].
+theories, and we should always keep in mind that the information concept itself depends on the theoretical context [see for instance @Garfinkel2009 for a useful critique].
 
 Here, for simplicity, we use entropy as [shannon and weaver] defined it:
 a measure of the *minimum* possible knowledge some set of data may convey. Entropy thereby describes how representation is bounded by specific laws of physics, ignoring the unknown specific coupling between operations in quipu use ["We require that a system of signals and a system of information be capable of being not only coupled but *variably* coupled in the sense that while this information would depend upon signal characteristics that it not be given in one-to-one fashion with signal characteristics. We require that it be possible to perform physical operations that will affect it while at the same time logical operations like matching, counting, comparing, classifying, measuring, be possible with it."(ibid. p. 110)]
 
-Here are all the quipu in the Harvard database in order of average
- entropy bits they represent (only listing every other quipu ID):
+![All the quipus in the Harvard database in order of average
+ entropy bits they represent (only listing every other quipu ID)](figures/entropy-per-quipu.png)
 
-![](figures/entropy-per-quipu.png)
-
-This graph is calculated by making lists of all the discrete data of
+This graph shown in Figure xxx is calculated by making lists of all the discrete data of
 the same type, e.g. knot value, type, tying direction, pendant colours
 and ply direction (ignoring lengths and knot positions as these are
 continuous) – then calculating Shannon entropy on histograms for each
@@ -160,7 +149,7 @@ have roughly similar average amounts of information:
 
 The meanings of colours, ply and structure are largely unknown, but we
 can compare them with the knot values which we do understand. This
-could give an indication if they contain information. Here are the
+could give an indication of whether they contain information. Here are the
 knot values compared with the colours:
 
 ![](figures/entropy-values-colours.png)
@@ -180,15 +169,13 @@ inside them and view their structure in terms of relative
 entropy. This is done below hierarchically, so a pendant’s entropy
 (shown as brightness) is that of its data plus all the sub-pendants,
 which seemed most appropriate given the non-linear form that the data
-takes.
+take.
 
 ![](figures/ur037.png)
 
 ![](figures/e-ur037.png)
 
-This figure shows the local entropy for all the Quipu.
-
-![](figures/entropy-local.png)
+![The local entropy for all the Quipu in the Harvard database.](figures/entropy-local.png)
 
 # Sonification
 ## On the method
@@ -204,14 +191,9 @@ Visualisation offers the advantage of a very differentiated spatial
 distribution. By contrast, sonification is an excessively temporal
 method, which means that it can not only animate relationships, as one
 would do with a moving image, but everything is conveyed through
-oscillation.
-
-But there are very many different sonification approaches in a
-sonification laboratory [Till Bovermann, Julian Rohrhuber, and Alberto
-de Campo, Laboratory Methods for Experimental Sonification, The
-Sonification Handbook, Logos Publishing House, Berlin, 2011] – which
+oscillation. However, there are very many different sonification approaches in a
+sonification laboratory [@Bovermann2011] --- which
 one to choose if we want to better understand quipus?
-
 
 Our case presents specific challenges, because quipus are a branching
 structure, which, instead of just being laid out in space, has to be
@@ -220,7 +202,7 @@ that it broaches the tacit assumptions that remain hidden in pictorial
 representation: in fact we do not know how the quipus were read, so
 that the correct reading order is uncertain, and out of the many
 possible paths, many are non-trivial. Moreover, even reading orders
-that were not used by the quipu-makers may reveal important facts
+that were not used by the Khipukamayuq (quipu-makers) may reveal important facts
 about what they encode.
 
 The material qualities of quipus present us with the challenge of
@@ -268,7 +250,7 @@ text).
 The current state of research makes it plausible that the colours used
 in quipus are of significance, but it is so far unclear of what. The
 shades of colours are subtle, as is their possible meaning. To start
-with, we sonified the colour pattern of the quipu UR004 in a very
+with, we sonified the colour pattern of the quipu #UR004 in a very
 simple way: a series of very short sine tone chords represent the red,
 green and blue components. The different colours of each pendant were
 thereby read like a musical chord:
@@ -290,20 +272,18 @@ pursue this direction a little further.
 After an inquiry in the interpretations of archaeological findings, we
 found two promising quipus which made us curious. The paper by Juliana
 Martins[] on the astronomical analysis of an Inca Quipu pointed to two
-interesting candidates from Leymebamba (UR006 and UR009).
+interesting candidates from Leymebamba (#UR006 and #UR009).
 
 This time, we sonically displayed more of the data dimensions. Here is
-a first result (UR006):
+a first result (#UR006):
 
 
 ![](figures/UR006-spectrum.png)
 
 It is not well visible in the spectrogram but audible that each short
-sound event (about 1/10 of a second an shorter as we go down the
+sound event (about 1/10 of a second shorter as we go down the
 subsidiaries) has a number of independent timbral properties, some of
-which have significant pattern across longer sections. Here is an
-overview of what “quipu dimension” is mapped onto which sound
-dimension:
+which have significant pattern across longer sections. 
 
 | quipu | sound |
 | --- | --- |
@@ -313,6 +293,8 @@ dimension:
 | pendant attach (verso or recto) |	pan position left or right channel |
 | pendant ply (S or Z) |	envelope shape (audible as “inversion effect”) |
 | unknown values |	are usually interpreted as neutral (pan) or low (colour) |
+
+Table: An overview of which 'quipu dimension' is mapped onto which sound dimension.
 
 The moments of audible acceleration result from areas with many
 pendants that have subsidiaries (side branches). In various dimensions
@@ -354,8 +336,7 @@ Tdef(\x, {
 
 ### Knot-Spectra
 
-So far we have considered only the properties of the pendants themselves, which certainly stand out less than the more obvious knots which were tied in them. Some of the knot patterns have been interpreted as numerical records in a decimal base encoding. The counter check of reading them as additions (like on an abacus) is consistent, and where such calculations have been found, the Harvard data set contains the numerical interpretation as a value. There are many quipus, however, which do not fall into this category. Here knots most probably are of significance, but we lack of a matching interpretation. The attributes are: position, value, type (single, long, eight, or undefined), spin.
-
+So far we have considered only the properties of the pendants themselves, which certainly stand out less than the more obvious knots which were tied in them. Some of the knot patterns have been interpreted as numerical records in a decimal base encoding. The counter check of reading them as additions (like on an abacus) is consistent, and where such calculations have been found, the Harvard data set contains the numerical interpretation as a value. There are many quipus, however, which do not fall into this category. Here knots most probably are of significance, but we lack a matching interpretation. The attributes are: position, value, type (single, long, eight, or undefined), and spin.
 
 We know from the numerical quipus that the place on the pendant is of significance, so that it makes sense to acoustically display this information. The following example is one from our experiments, where the known numerical value is interpreted as node (zero if not available), and is superposed with the spectral distribution derived from the position pattern. The spin is used as a pan position in the stereo field (left/right/center):
 
@@ -384,7 +365,7 @@ Tdef(\x, {
 
 ```
 
-For another variant in sonifying the knot data, we used the multichannel sound system available in the experimental laboratory in Düsseldorf. The program code demonstrates that very little modification is necessary to use the spectral information as an offset into the eight channels:
+For another variant in sonifying the knot data, we used the multichannel sound system available in the experimental laboratory in Robert Schumann Hochschule Düsseldorf. The program code demonstrates that very little modification is necessary to use the spectral information as an offset into the eight channels:
 
 ```
   (
@@ -414,7 +395,7 @@ For another variant in sonifying the knot data, we used the multichannel sound s
 
 ### The Project "Inka Telefax. Listening to Precolumbian Administration without understanding a word"
 
-
+[//]: <> (Should there be some text here or is this a title for the conclusion?)
 
 # Conclusions
 
@@ -423,28 +404,25 @@ between what has been called "form and function". Form usually being
 that of non-functional representation or decoration, function usually
 that of non-formal use for specific practical purposes. These terms
 are misplaced, as it is commonly acknowledged, because decorative and
-iconic detail at least has a social function. [see also Textile
-Semantics: Considering a Communication-based Reading of Textiles]
+iconic detail at least has a social function [see also @Andrew2008].
 Quipus are a specific case, however, because here, the decorative
 detail serves a representative function, mostly, but perhaps not
 exclusively, an administrative one. Because of the small number of
 extant artefacts, their retrospective decoding becomes a difficult
 task; at the same time, all measurable information about them has been
 translated to the predominant administrative tool of our culture,
-excel sheets.
+Excel spreadsheets.
 
-Our basic cryptanalysis gives us a comparison between different quipu,
-and shows that the differences between them are fairly continous - our
+Our basic cryptanalysis gives us a comparison between different quipus,
+and shows that the differences between them are fairly continuous - our
 entropy analyis has not revealed easily determined categories of quipu
-in the corpus in the dimentions that we compared. This may be
+in the corpus in the dimensions that we compared. This may be
 surprising given that different Khipukamayuq may have employed
 different techniques, and that these may have evolved over time or
 distance. On the other hand, when we measure discontinuities of
-potential data storage within the quipu - we find areas of complexity
+potential data storage within the quipus --- we find areas of complexity
 along with areas of low information, further analysis may help to
-understand structural patterns.
-
-By proposing some experimental "laboratory methods" [ref] for the
+understand structural patterns. By proposing some experimental "laboratory methods" [ref] for the
 sonification of those data sets, we hope to have broadened the
 perspective of their reading. 
 
