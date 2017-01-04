@@ -1,4 +1,14 @@
-# Coding with Knots
+---
+title: | 
+  Coding with Knots
+author:
+  - Julian Rohrhuber
+  - David Griffiths
+abstract: Abstract goes here
+fontsize: 11pt
+geometry: margin=2.5cm
+bibliography: quipu.bib
+...
 
 The Inca empire flourished at its height to 37 million people,
 without the need of money or a written language. We know that numeric
@@ -436,3 +446,5 @@ sonifications can cultivate a movement between archeological interest
 and aesthetic sensibility. Used by archeologists as a methodological
 alternative, it might lead to new ideas of how to read quipus in their
 cultural context.
+
+# Bibliography
