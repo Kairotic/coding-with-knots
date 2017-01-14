@@ -412,8 +412,13 @@ For another variant in sonifying the knot data, we used the multichannel sound s
 
 
 
-### The Project "Inka Telefax. Listening to Precolumbian Administration without understanding a word"
+### Inka Telefax
 
+Because quipus are material artefacts that are fabricated with an effort, we can reasonably expect every detail to convey some relevant information. Even in the case that some of it might have been ornamentation, it was still an integral part of the art of quipu-making. And certainly most of the details were addressed to someone (someone else than us, we should say). As most of the crucial knowledge about how to read these details and make sense of their patterns has been purposefully destroyed by the Spanish authorities, today we can perhaps do nothing more than to indirectly infer the  administrative cognitive labour. Indeed where modes of access are lacking, there is nothing more than the pure acknowledgement that this labour has indeed taken place.
+
+The Project *Inka Telefax. Listening to Precolumbian Administration without understanding a word*, is a result from the above sonification and visualisation efforts. As part of the exhibition *Thinking Out Loud*, it is a three-channel sound installation with accompanying images (the above pixelquipu) on permanent display. The piece takes elements from the sonification of quipu data from the Khipu Database Project, initiated by by Gary Urton.
+
+One can understand this installation as a displacement of administrative information from an unknown context into the contemporary world of an administrative office of the London based *Open Data Institute*. Between July 15th 2016 and  March 31th 2017, it is played at 9:59am on every Monday, Wednesday, and Friday for about 30 seconds in the work space.
 
 
 # Conclusions
@@ -446,7 +451,7 @@ understand structural patterns.
 
 By proposing some experimental "laboratory methods" [ref] for the
 sonification of those data sets, we hope to have broadened the
-perspective of their reading. 
+perspective of their reading.
 
 Listening to the inner structure of these artefacts is a method of
 systematic spreading of awareness over time. Unlike an image which can
