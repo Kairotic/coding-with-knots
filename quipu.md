@@ -1,10 +1,10 @@
 ---
-title: | 
-  Coding with Knots
+title: |
+   Coding with Knots
 author:
-  - Julian Rohrhuber
-  - David Griffiths
-abstract: Abstract goes here
+   - Julian Rohrhuber (The Institute For Music And Media, Robert Schumann Hochschule, Düsseldorf) 
+   - David Griffiths (FoAM Kernow)
+abstract: In this paper we explore new ways to approach understanding of the mysterious Precolumbian quipus, using both visual and sonic interpretations. We base our investigation on the Harvard Quipu Archive, starting with graphical visualisation techniques that give us an overall view so we can compare textile structures and perform basic cryptanalysis. We use listening and sonification in order to filter and compare the different modes of data representation (knot type, colour, twist and material). This provides new ways to experience both currently understood and unknown meanings in quipus.  
 fontsize: 11pt
 geometry: margin=2.5cm
 bibliography: quipu.bib
@@ -37,18 +37,40 @@ becoming attuned to what we try to convey with them, in turn may
 change the way we approach contemporary data.
 
 The information available to us via the database of the Harvard Quipu
-Archive^[The Harvard Quipu Archive is available at http://khipukamayuq.fas.harvard.edu/ (accessed 4th January 2017)] is derived from a set of
-quipus encoded with information on thread type, knot type, knot
-position, colour and the currently understood base 10 numeric
-encodings.
+Archive^[The Harvard Quipu Archive is available at
+http://khipukamayuq.fas.harvard.edu/ (accessed 4th January 2017)] is
+derived from a set of quipus encoded with information on thread type,
+knot type, knot position, colour and the currently understood base 10
+numeric encodings.
 
 ## Methods
 
-How to approach something of which we only know for sure that it represents something, but something we don't know? Even more, where we don't know in what way it is represented? From reports we learn that quipus were reformulated in use --- they were a dynamic medium, more like a chalkboard than a book; they were used to archive, to convey, and operate on information. Quipus are a "communication-based textile" [Sonja Andrew, Textile Semantics: Considering a Communication-based Reading of Textiles, Textile 6 (2008), no. 1, 32–65.] in a very literal sense. Resembling scripture, we still cannot take it as a given that they were read from left to right only.
+How to approach something of which we only know for sure that it
+represents something, but something we don't know? Even more, where we
+don't know in what way it is represented? From reports we learn that
+quipus were reformulated in use --- they were a dynamic medium, more
+like a chalkboard than a book; they were used to archive, to convey,
+and operate on information. Quipus are a "communication-based textile"
+[Sonja Andrew, Textile Semantics: Considering a Communication-based
+Reading of Textiles, Textile 6 (2008), no. 1, 32–65.] in a very
+literal sense. Resembling scripture, we still cannot take it as a
+given that they were read from left to right only.
 
-The problem resembles that of the archeological reconstruction of *chaînes opératoires*: the ramified paths of actions that were performed in the production of paleolithic stone tools, paths which sometimes can be read out of the artefacts and the left-overs and traces of this process [@Bleed2001]. Only that here, the resulting artefact, rather than merely a result, is meant to actively convey and compute information. Where the translation and computation practice is unknown, however, progress is difficult.
+The problem resembles that of the archeological reconstruction of
+*chaînes opératoires*: the ramified paths of actions that were
+performed in the production of paleolithic stone tools, paths which
+sometimes can be read out of the artefacts and the left-overs and
+traces of this process [@Bleed2001]. Only that here, the resulting
+artefact, rather than merely a result, is meant to actively convey and
+compute information. Where the translation and computation practice is
+unknown, however, progress is difficult.
 
-For the time being, perhaps the best we can do is to superpose the left-overs of past methods with our own translational and computational practices, and hope for a heuristic widening of the horizon. In the following we briefly address one particular form of such a heuristic: in *modality* (image and sound) on the one hand, and in *temporality* (reading methods), on the other.
+For the time being, perhaps the best we can do is to superpose the
+left-overs of past methods with our own translational and
+computational practices, and hope for a heuristic widening of the
+horizon. In the following we briefly address one particular form of
+such a heuristic: in *modality* (image and sound) on the one hand, and
+in *temporality* (reading methods), on the other.
 
 
 ## Visualisation
@@ -63,30 +85,33 @@ structure of the record, with knots and colours.
 ![Quipu catalogued as #UR1138 rendered using Graphviz](figures/UR1138.xls.png)
 
 The quipu cord colours are encoded in the database using Ascher colour
-codes [@Ascher1978]
-which is an adapated form of ISCC-NBS colour coding, a standard provided by @Judd1939. This was converted
-to hex RGB values required for the visualisation using an online tool
-^[NBS/ISCC Color System http://tx4.us/nbs-iscc.htm, accessed 4th January 2017].
+codes [@Ascher1978] which is an adapated form of ISCC-NBS colour
+coding, a standard provided by @Judd1939. This was converted to hex
+RGB values required for the visualisation using an online tool
+^[NBS/ISCC Color System http://tx4.us/nbs-iscc.htm, accessed 4th
+January 2017].
 
 # PixelQuipu
 
-The visualisations produced with Graphviz are quite limited, as they tend
-to result in very large images, and don't provide enough control over how they
-are drawn. Also, topologically oriented displays are naturally limited where metrics are at stake. We needed to get more of an overview of the data, displaying
-the knots in the right positions with the pendants being the right
-length. A new system[], which we have named *pixelquipu*, was devised to display a quipu
-directly from the Harvard dataset:
+The visualisations produced with Graphviz are quite limited, as they
+tend to result in very large images, and don't provide enough control
+over how they are drawn. Also, topologically oriented displays are
+naturally limited where metrics are at stake. We needed to get more of
+an overview of the data, displaying the knots in the right positions
+with the pendants being the right length. A new system[], which we
+have named *pixelquipu*, was devised to display a quipu directly from
+the Harvard dataset:
 
 ![Quipu #UR018 rendered with PixelQuipu](figures/ur018.png)
 
 Each knot is shown as a single pixel attached to the pendant, with a
-colour code of *red* as single knot, *green* for a long knot and *blue* as a
-figure of eight knot (*yellow* represents something unknown or missing). We are interested
-in the overall data rather than the specific values, so the value of
-the knot sets the brightness of the pixel. The colour variations for
-the pendants are represented, but there is no difference between
-twisted and alternating colours, also no twist direction is
-visualised.
+colour code of *red* as single knot, *green* for a long knot and
+*blue* as a figure of eight knot (*yellow* represents something
+unknown or missing). We are interested in the overall data rather than
+the specific values, so the value of the knot sets the brightness of
+the pixel. The colour variations for the pendants are represented, but
+there is no difference between twisted and alternating colours, also
+no twist direction is visualised.
 
 Such a representation makes it easier to compare whole quipus, to
 compare their parts, to find reoccurring details and to shift focus
@@ -448,3 +473,25 @@ alternative, it might lead to new ideas of how to read quipus in their
 cultural context.
 
 # Bibliography
+
+# Biographies
+
+Julian Rohrhuber is a wonderful chap who ...
+
+David Griffiths is a game designer, programmer and livecoding
+algoraver based in Cornwall UK. In 2014 he co-founded FoAM Kernow, an
+independent research institution for exploring uncharted regions of
+art, technology and science with Amber Griffiths. In 2014 FoAM Kernow
+was awarded the Soil Association innovation award for the "Farm Crap
+App" and in 2016 David appeared on the Cerys Matthews Radio 6 Music
+show talking about Sonic Kayaks - turning paddlers into citizen
+scientists to help climate change research using music. Since 2013 he
+has lectured as associate professor of critical programming at the
+Robert Schumann School of Music and Media in Düsseldorf, and alongside
+Aymeric Mansoux and Marloes de Valk he created the satirical Facebook
+game Naked on Pluto which won the Telefonica Vida competition in
+2011. David also teaches primary school children, teenagers and school
+teachers programming, Minecraft and electronics, and previously he
+worked in the games (Computer Artworks & Sony Europe) and film
+computer graphics industry (Moving Picture Company), and has credits
+on feature films including Troy and Kingdom of Heaven.
