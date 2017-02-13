@@ -489,7 +489,7 @@ was awarded the Soil Association innovation award for the "Farm Crap
 App" and in 2016 David appeared on the Cerys Matthews Radio 6 Music
 show talking about Sonic Kayaks - turning paddlers into citizen
 scientists to help climate change research using music. Since 2013 he
-has lectured as associate professor of critical programming at the
+has lectured as assistant professor of critical programming at the
 Robert Schumann School of Music and Media in Düsseldorf, and alongside
 Aymeric Mansoux and Marloes de Valk he created the satirical Facebook
 game Naked on Pluto which won the Telefonica Vida competition in
