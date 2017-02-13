@@ -4,6 +4,7 @@ title: |
 author:
    - Julian Rohrhuber (The Institute For Music And Media, Robert Schumann Hochschule, Düsseldorf) 
    - David Griffiths (FoAM Kernow)
+
 abstract: In this paper we explore new ways to approach understanding of the mysterious Precolumbian quipus, using both visual and sonic interpretations. We base our investigation on the Harvard Quipu Archive, starting with graphical visualisation techniques that give us an overall view so we can compare textile structures and perform basic cryptanalysis. We use listening and sonification in order to filter and compare the different modes of data representation (knot type, colour, twist and material). This provides new ways to experience both currently understood and unknown meanings in quipus.  
 fontsize: 11pt
 geometry: margin=2.5cm
