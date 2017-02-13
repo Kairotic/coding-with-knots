@@ -481,8 +481,6 @@ cultural context.
 
 # Biographies
 
-Julian Rohrhuber is a wonderful chap who ...
-
 David Griffiths is a game designer, programmer and livecoding
 algoraver based in Cornwall UK. In 2014 he co-founded FoAM Kernow, an
 independent research institution for exploring uncharted regions of
@@ -500,3 +498,6 @@ teachers programming, Minecraft and electronics, and previously he
 worked in the games (Computer Artworks & Sony Europe) and film
 computer graphics industry (Moving Picture Company), and has credits
 on feature films including Troy and Kingdom of Heaven.
+
+Julian Rohrhuber is professor for music informatics and media theory. His research includes the philosophy of science, media theory, and algorithmic acoustics. In collaboration with his students, he is concerned with art as a form of theory as well as teaching as a mode of research. The possibility of reasoning through sound motivates his work on algorithmic composition and live coding. In 2014 he realised the album Politiken der Frequenz together with Marcus Schmickler. The papers of the previous years touch upon topics like patents and algorithms, history of programming and mathematics, art theory, sonification, and documentary film.
+
