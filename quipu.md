@@ -5,7 +5,19 @@ author:
    - Julian Rohrhuber (The Institute For Music And Media, Robert Schumann Hochschule, Düsseldorf) 
    - David Griffiths (FoAM Kernow)
 
-abstract: In this paper we explore new ways to approach understanding of the mysterious Precolumbian quipus, using both visual and sonic interpretations. We base our investigation on the Harvard Quipu Archive, starting with graphical visualisation techniques that give us an overall view so we can compare textile structures and perform basic cryptanalysis. We use listening and sonification in order to filter and compare the different modes of data representation (knot type, colour, twist and material). This provides new ways to experience both currently understood and unknown meanings in quipus.  
+abstract: |
+   In this paper we explore new ways to approach
+   understanding of the mysterious Precolumbian quipus, using both
+   visual and sonic interpretations. We base our investigation on the
+   Harvard Quipu Archive, starting with graphical visualisation
+   techniques that give us an overall view so we can compare textile
+   structures and perform basic cryptanalysis. We use listening and
+   sonification in order to filter and compare the different modes of
+   data representation (knot type, colour, twist and material). This
+   provides new ways to experience both currently understood and
+   unknown meanings in quipus.
+
+   Keywords: quipu, visualisation, sonification, crypanlysis, textile
 fontsize: 11pt
 geometry: margin=2.5cm
 bibliography: quipu.bib
@@ -321,14 +333,14 @@ sound event (about 1/10 of a second shorter as we go down the
 subsidiaries) has a number of independent timbral properties, some of
 which have significant pattern across longer sections. 
 
-| quipu | sound |
-| --- | --- |
-| colour 	| sine tone spectrum of three partials |
-| branching level |	duration between sound grains (inter onset duration) |
-| pendant length |	duration of each sound grain (relative to inter onset time) |
-| pendant attach (verso or recto) |	pan position left or right channel |
-| pendant ply (S or Z) |	envelope shape (audible as “inversion effect”) |
-| unknown values |	are usually interpreted as neutral (pan) or low (colour) |
+quipu                               sound
+----------------------------------- -------------------------------------------------------------
+colour                              sine tone spectrum of three partials
+branching level                     duration between sound grains (inter onset duration)
+pendant length                      duration of each sound grain (relative to inter onset time)
+pendant attach (verso or recto)     pan position left or right channel
+pendant ply (S or Z)                envelope shape (audible as “inversion effect”)
+unknown values                      are usually interpreted as neutral (pan) or low (colour)
 
 Table: An overview of which 'quipu dimension' is mapped onto which sound dimension.
 
@@ -478,8 +490,6 @@ and aesthetic sensibility. Used by archeologists as a methodological
 alternative, it might lead to new ideas of how to read quipus in their
 cultural context.
 
-# Bibliography
-
 # Biographies
 
 David Griffiths is a game designer, programmer and livecoding
@@ -501,4 +511,6 @@ computer graphics industry (Moving Picture Company), and has credits
 on feature films including Troy and Kingdom of Heaven.
 
 Julian Rohrhuber is professor for music informatics and media theory. His research includes the philosophy of science, media theory, and algorithmic acoustics. In collaboration with his students, he is concerned with art as a form of theory as well as teaching as a mode of research. The possibility of reasoning through sound motivates his work on algorithmic composition and live coding. In 2014, for example, he realised the piece Politiken der Frequenz together with Marcus Schmickler, a treatment of the sonification of mathematical conceptions of number and their political implications. Publications are concerned with topics like algorithms and politics, history and philosophy of programming and mathematics, art theory, sonification, and documentary film.
+
+# Bibliography
 
