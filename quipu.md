@@ -111,7 +111,7 @@ over how they are drawn. Also, topologically oriented displays are
 naturally limited where metrics are at stake. We needed to get more of
 an overview of the data, displaying the knots in the right positions
 with the pendants being the right length. A new system, which we have
-named *pixelquipu*[@julian_rohrhuber_2017_291960], was devised to
+named *pixelquipu*[@dave_griffiths_2017_291962], was devised to
 display a quipu directly from the Harvard dataset:
 
 ![Quipu #UR018 rendered with PixelQuipu](figures/ur018.png)\
