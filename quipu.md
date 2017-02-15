@@ -63,10 +63,10 @@ represents something, but something we don't know? Even more, where we
 don't know in what way it is represented? From reports we learn that
 quipus were reformulated in use --- they were a dynamic medium, more
 like a chalkboard than a book; they were used to archive, to convey,
-and operate on information. Quipus are a "communication-based textile"
-[@Andrew2008] in a very literal sense. Resembling scripture, we
-still cannot take it as a given that they were read from left to right
-only.
+and operate on information[@Urton2003]. Quipus are a
+"communication-based textile" [@Andrew2008] in a very literal
+sense. Resembling scripture, we still cannot take it as a given that
+they were read from left to right only.
 
 The problem resembles that of the archaeological reconstruction of
 *chaînes opératoires*: the ramified paths of actions that were
@@ -90,7 +90,7 @@ in *temporality* (reading methods), on the other.
 To get a first understanding of the types of structures present in
 a quipu, a simple parser for the data was constructed which then
 converted the data into a form readable by the common command line
-application Graphviz. This convenient way to automatically layout
+application Graphviz[@Gansner00anopen]. This convenient way to automatically layout
 tree structures provided us with a schematic representation of the
 structure of the record, with knots and colours.
 
@@ -110,9 +110,9 @@ tend to result in very large images, and don't provide enough control
 over how they are drawn. Also, topologically oriented displays are
 naturally limited where metrics are at stake. We needed to get more of
 an overview of the data, displaying the knots in the right positions
-with the pendants being the right length. A new system, which we
-have named *pixelquipu*, was devised to display a quipu directly from
-the Harvard dataset:
+with the pendants being the right length. A new system, which we have
+named *pixelquipu*[@julian_rohrhuber_2017_291960], was devised to
+display a quipu directly from the Harvard dataset:
 
 ![Quipu #UR018 rendered with PixelQuipu](figures/ur018.png)\
 
@@ -158,23 +158,35 @@ containing any knots?
 
 The original idea of the pixelquipu was the attempt to fit all the
 quipus on a single page for viewing, as it represents them with the
-absolute minimum pixels required. So finally, here are both pendant
-colour and entropy shown for all 247 quipu we have the data for.
+absolute minimum pixels required. So finally, Figures 4 and 9 display
+pendant colour and entropy for all 247 quipu we have the data for.
 
 ![All 247 quipu in the collection](figures/all.png)
 
 # Entropy
 
-As we have so little idea what the Inca are telling us (or rather each other!) in their quipus,
-it seems appropriate to add a basic cryptanalysis approach to our toolkit of
-inquiry. One of the first things that a cryptanalyst will do when
-inspecting an unknown system is to visualise its entropy in order to
-get a handle on structures or patterns in the underlying
-information. The concepts of entropy differ very much in the different
-theories, and we should always keep in mind that the information concept itself depends on the theoretical context [see for instance @Garfinkel2009 for a useful critique].
+As we have so little idea what the Inca are telling us (or rather each
+other!) in their quipus, it seems appropriate to add a basic
+cryptanalysis approach to our toolkit of inquiry. One of the first
+things that a cryptanalyst will do when inspecting an unknown system
+is to visualise its entropy in order to get a handle on structures or
+patterns in the underlying information. The concepts of entropy differ
+very much in the different theories, and we should always keep in mind
+that the information concept itself depends on the theoretical context
+[see for instance @Garfinkel2009 for a useful critique].
 
-Here, for simplicity, we use entropy as Shannon and Weaver defined it:
-a measure of the *minimum* possible knowledge some set of data may convey. Entropy thereby describes how representation is bounded by specific laws of physics, ignoring the unknown specific coupling between operations in quipu use. "We require that a system of signals and a system of information be capable of being not only coupled but *variably* coupled in the sense that while this information would depend upon signal characteristics that it not be given in one-to-one fashion with signal characteristics. We require that it be possible to perform physical operations that will affect it while at the same time logical operations like matching, counting, comparing, classifying, measuring, be possible with it." (ibid. p. 110).
+Here, for simplicity, we use entropy as @ShannonWeaver1949 defined it:
+a measure of the *minimum* possible knowledge some set of data may
+convey. Entropy thereby describes how representation is bounded by
+specific laws of physics, ignoring the unknown specific coupling
+between operations in quipu use. "We require that a system of signals
+and a system of information be capable of being not only coupled but
+*variably* coupled in the sense that while this information would
+depend upon signal characteristics that it not be given in one-to-one
+fashion with signal characteristics. We require that it be possible to
+perform physical operations that will affect it while at the same time
+logical operations like matching, counting, comparing, classifying,
+measuring, be possible with it." (ibid. p. 110).
 
 ![All the quipus in the Harvard database in order of average
  entropy bits they represent (only listing every other quipu ID)](figures/entropy-per-quipu.png)
@@ -219,10 +231,9 @@ entropy. This is done below hierarchically, so a pendant’s entropy
 which seemed most appropriate given the non-linear form that the data
 take.
 
-![](figures/ur037.png)\
+![Quipu UR037 showing pendant colours.](figures/ur037.png)\
 
-![](figures/e-ur037.png)\
-
+![Quipu UR037 showing hierarchical entropy.](figures/e-ur037.png)\
 
 # Sonification
 ## On the method
@@ -302,9 +313,9 @@ simple way: a series of very short sine tone chords represent the red,
 green and blue components. The different colours of each pendant were
 thereby read like a musical chord:
 
-![](figures/UR004-spectrum.png)\
+![A spectrogram of a sonification of pendant colour taken from quipu #UR004.](figures/UR004-spectrum.png)\
 
-![](figures/UR004-spectrum-part.png)\
+![A close up for the pendant colour sonification from quipu #UR004.](figures/UR004-spectrum-part.png)\
 
 This causes tones of grey to sound like a single tone, and the
 difference between components stands out as distance between separate
@@ -505,7 +516,18 @@ worked in the games (Computer Artworks & Sony Europe) and film
 computer graphics industry (Moving Picture Company), and has credits
 on feature films including Troy and Kingdom of Heaven.
 
-Julian Rohrhuber is professor for music informatics and media theory. His research includes the philosophy of science, media theory, and algorithmic acoustics. In collaboration with his students, he is concerned with art as a form of theory as well as teaching as a mode of research. The possibility of reasoning through sound motivates his work on algorithmic composition and live coding. In 2014, for example, he realised the piece Politiken der Frequenz together with Marcus Schmickler, a treatment of the sonification of mathematical conceptions of number and their political implications. Publications are concerned with topics like algorithms and politics, history and philosophy of programming and mathematics, art theory, sonification, and documentary film.
+Julian Rohrhuber is professor for music informatics and media
+theory. His research includes the philosophy of science, media theory,
+and algorithmic acoustics. In collaboration with his students, he is
+concerned with art as a form of theory as well as teaching as a mode
+of research. The possibility of reasoning through sound motivates his
+work on algorithmic composition and live coding. In 2014, for example,
+he realised the piece Politiken der Frequenz together with Marcus
+Schmickler, a treatment of the sonification of mathematical
+conceptions of number and their political implications. Publications
+are concerned with topics like algorithms and politics, history and
+philosophy of programming and mathematics, art theory, sonification,
+and documentary film.
 
 # Bibliography
 
