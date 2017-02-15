@@ -191,7 +191,7 @@ measuring, be possible with it." (ibid. p. 110).
 ![All the quipus in the Harvard database in order of average
  entropy bits they represent (only listing every other quipu ID)](figures/entropy-per-quipu.png)
 
-This graph shown in Figure 5 is calculated by making lists of all the discrete data of
+The graph shown in Figure 5 is calculated by making lists of all the discrete data of
 the same type, e.g. knot value, type, tying direction, pendant colours
 and ply direction (ignoring lengths and knot positions as these are
 continuous) – then calculating Shannon entropy on histograms for each
@@ -231,12 +231,12 @@ entropy. This is done below hierarchically, so a pendant’s entropy
 which seemed most appropriate given the non-linear form that the data
 take.
 
-![Quipu UR037 showing pendant colours.](figures/ur037.png)\
+![Quipu UR037 showing pendant colours.](figures/ur037.png)
 
-![Quipu UR037 showing hierarchical entropy.](figures/e-ur037.png)\
+![Quipu UR037 showing hierarchical entropy.](figures/e-ur037.png)
+
 
 # Sonification
-## On the method
 
 Where the significance of the structure of a specific medium is
 unknown, sonification can be a way to gain new insight. There are
@@ -295,6 +295,7 @@ scripts starting from a single dimension (here the sonification of
 thread colour) and the concurrent display of multiple dimensions.
 
 ## Sonification experiments
+
 ### Thread colour: a single dimension display
 
 Quipus have a very distinct shape: a rather long series of small
@@ -311,11 +312,11 @@ shades of colours are subtle, as is their possible meaning. To start
 with, we sonified the colour pattern of the quipu #UR004 in a very
 simple way: a series of very short sine tone chords represent the red,
 green and blue components. The different colours of each pendant were
-thereby read like a musical chord:
+thereby read like a musical chord, as can be seen in Figures 12 and 13.
 
-![A spectrogram of a sonification of pendant colour taken from quipu #UR004.](figures/UR004-spectrum.png)\
+![A spectrogram of a sonification of pendant colour taken from quipu #UR004.](figures/UR004-spectrum.png)
 
-![A close up for the pendant colour sonification from quipu #UR004.](figures/UR004-spectrum-part.png)\
+![A close up for the pendant colour sonification from quipu #UR004.](figures/UR004-spectrum-part.png)
 
 This causes tones of grey to sound like a single tone, and the
 difference between components stands out as distance between separate
@@ -333,7 +334,7 @@ interesting candidates from Leymebamba (#UR006 and #UR009).
 
 ![A spectrogram of a sonification of multiple data dimensions of quipu #UR006. See Table 1 for details of the mapping.](figures/UR006-spectrum.png)
 
-Figure 10 shows a spectrogram created using the timbral mappings
+Figure 14 shows a spectrogram created using the timbral mappings
 described in Table 1. It is not well visible in the spectrogram, but
 audible that each short sound event (about 1/10 of a second shorter as
 we go down the subsidiaries) has a number of independent timbral
@@ -355,10 +356,10 @@ The moments of audible acceleration result from areas with many
 pendants that have subsidiaries (side branches). In various dimensions
 rhythmic patterns appear, which partly coincide and partly remain
 independent. Also, in some moments, we can hear sudden changes of the
-overall pattern, indicating a transition into a different logic.
+overall pattern, indicating a transition into a different logic. You
+can see how the multidimensional display is a relatively
+straightforward extension of the one-dimensional one.
 
-You can see how the multidimensional display is a relatively
-straightforward extension of the single dimension one.
 
 ```
 (
