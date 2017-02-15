@@ -17,7 +17,7 @@ abstract: |
    provides new ways to experience both currently understood and
    unknown meanings in quipus.
 
-   Keywords: quipu, visualisation, sonification, crypanlysis, textile
+   Keywords: quipu, visualisation, sonification, cryptanlysis, textile
 fontsize: 11pt
 geometry: margin=2.5cm
 bibliography: quipu.bib
