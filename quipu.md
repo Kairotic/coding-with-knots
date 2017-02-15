@@ -158,7 +158,7 @@ containing any knots?
 
 The original idea of the pixelquipu was the attempt to fit all the
 quipus on a single page for viewing, as it represents them with the
-absolute minimum pixels required. So finally, Figures 4 and 9 display
+absolute minimum pixels required. So finally, figures 4 and 9 display
 pendant colour and entropy for all 247 quipu we have the data for.
 
 ![All 247 quipu in the collection](figures/all.png)
