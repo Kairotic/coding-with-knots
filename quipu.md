@@ -23,6 +23,20 @@ geometry: margin=2.5cm
 bibliography: quipu.bib
 ...
 
+## Abstract
+
+In this paper we explore new ways to approach understanding of the
+mysterious Precolumbian quipus, using both visual and sonic
+interpretations. We base our investigation on the Harvard Quipu
+Archive, starting with graphical visualisation techniques that give us
+an overall view so we can compare textile structures and perform basic
+cryptanalysis. We use listening and sonification in order to filter
+and compare the different modes of data representation (knot type,
+colour, twist and material). This provides new ways to explore both
+currently understood and unknown patterns of meaning in quipus.
+
+## Introduction
+
 The Inca empire flourished at its height to 37 million people,
 without the need of money or a written language. We know that numeric
 information was stored by the Incas using *quipus*, a digital knot based
@@ -31,12 +45,6 @@ stones to read and calculate. Not many of them are extant, most were
 burned in the colonial wars. Until today, two thirds of the quipus
 discovered are untranslated, and do not fit into any known numeric
 coding system.
-
-![A Spanish illustration of a Khipukamayuq (knot maker/keeper)](figures/Yupana.jpg)
-
-![A close up of a small quipu showing undecyphered changes in colour,
-material and twist.
-](figures/quipu-wari.jpg)
 
 As a civilisation coming to terms with transitions to digital forms of
 social organisation, the Incas provide us with a useful counterpoint
